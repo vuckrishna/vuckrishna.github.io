@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>ROCKER PRODUCTS</title>
+	<style>body{background-color: rgb(41, 214, 245)} </style>
+</head>
+
+<img src="nove2i.jpg">
+
+<body onload="mobilesList()">
+	<h1>BEST MID-RANGE MOBILES WITH GREAT SPECS</h1>
+
+	<p id="mobiles"> </p>
+	
+	<img src="honor8pro.jpg">
+</body>
+</html>
+
+<script>
+	var movie_array =["ONEPLUS-5","HUAWEI HONOR 8 PRO","HUAWEI NOVA 2i"]
+
+		
+	
+    function mobilesList() 
+    {
+	var mobiles = document.getElementById("mobiles");
+
+	// build a dynamic unordered list
+	var info = "<ul>";
+
+	for (var count = 0; count < movie_array.length; count++) 
+	{
+		info = info + "<li>"+ movie_array[count]+"</li>";
+	}
+	info = info + "</ul>";
+ 
+	// load the information into element
+	mobiles.innerHTML = info;
+}
+</script>
+
