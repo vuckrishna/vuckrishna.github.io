@@ -1,0 +1,11 @@
+
+CREATE DATABASE library
+ 
+CREATE TABLE students (studentID SMALLINT NOT NULL AUTO_INCREMENT PRIMARY KEY, email VARCHAR(40), password_md5 VARCHAR(32), first  VARCHAR(40), last VARCHAR(40)), phone INT(10)), type VARCHAR(10)) 
+
+CREATE TABLE books (bookID SMALLINT NOT NULL AUTO_INCREMENT PRIMARY KEY, isbn VARCHAR(40), title VARCHAR(35), author VARCHAR(50), publisher VARCHAR(30))
+//You need to input few rows in this table. It can be done using PHPmyAdmin
+
+CREATE TABLE assigned_books (bookID SMALLINT, title VARCHAR(35), studentID SMALLINT, date_selected DATE, date_approved DATE) 
+
+CREATE TABLE staff (staffID SMALLINT NOT NULL AUTO_INCREMENT PRIMARY KEY, email VARCHAR(40), password_md5 VARCHAR(32), first  VARCHAR(40), last VARCHAR(40)), phone INT(10)), type VARCHAR(10)) 
