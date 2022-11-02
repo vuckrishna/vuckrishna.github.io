@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Favourite Vehicles</title>
+</head>
+
+<body onload="displayList()">
+
+    <p id="movieList"> </p>
+
+</body>
+</html>
+
+<script>
+    var movie_array = ["Royal Enfield Electra 350", "Royal Enfield Classic 500","Range Rover SE"];
+
+    function displayList() 
+    {
+	var movieList = document.getElementById("movieList");
+
+	// build a dynamic unordered list
+	var info = "<ul>";
+
+	for (var count = 0; count < movie_array.length; count++) 
+	{
+		info = info + "<li>"+ movie_array[count]+"</li>";
+	}
+	info = info + "</ul>";
+ 
+	// load the information into element
+	movieList.innerHTML = info;
+}
+</script>
