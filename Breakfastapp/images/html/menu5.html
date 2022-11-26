@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Menu</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/html/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid" id="navbar">
+    <div class="navbar-header">
+      <a href="/">
+        <img class="navbar-brand" src="../img/logo.jpg" alt="Breakfast logo" style="width:150px; height: 60px;">
+      </a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="/html/contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="final">
+  <article>
+    <img src="../img/s7.jpg" alt="Breakfast logo">
+  </article>
+</div>
+
+<div class="beefburgers">
+  <article>
+    <img src="../img/s1.png" class="beefitem1" alt="Breakfast logo"><br>
+    <h1 class="beefitem" id="title1"></h1>
+    <h2 id="tagline1"></h2><br>
+    <p id="info1"></p>
+  </article>
+</div>
+
+<div class="beefburgers2">
+  <article>
+    <img src="../img/s2.png" class="beefitem2" alt="Breakfast logo"><br>
+    <h1 class="beefitem" id="title2"></h1>
+    <h2 id="tagline2"></h2><br>
+    <p id="info2"></p>
+  </article>
+</div>
+
+<div class="beefburgers">
+  <article>
+    <img src="../img/s3.png" class="beefitem1" alt="Breakfast logo"><br>
+    <h1 class="beefitem" id="title3"></h1>
+    <h2 id="tagline3"></h2><br>
+    <p id="info3"></p>
+  </article>
+</div>
+
+<div class="beefburgers2">
+  <article>
+    <img src="../img/s4.png" class="beefitem2" alt="Breakfast logo"><br>
+    <h1 class="beefitem" id="title4"></h1>
+    <h2 id="tagline4"></h2><br>
+    <p id="info4"></p>
+  </article>
+</div>
+
+<div class="beefburgers">
+  <article>
+    <img src="../img/s5.png" class="beefitem1" alt="Breakfast logo"><br>
+    <h1 class="beefitem" id="title5"></h1>
+    <h2 id="tagline5"></h2><br>
+    <p id="info5"></p>
+  </article>
+</div>
+
+<div class="beefburgers2">
+  <article>
+    <img src="../img/s6.png" class="beefitem2" alt="Breakfast logo"><br>
+    <h1 class="beefitem" id="title6"></h1>
+    <h2 id="tagline6"></h2><br>
+    <p id="info6"></p>
+  </article>
+</div>
+
+<div class="footer">
+      Source : <a href="https://www.burgerking.com.sg/"> Burger King</a>
+</div>
+
+</body>
+
+<script>
+  var itemDetail = {
+    "title1":"FRENCH FRIES",
+    "tagline1":"Can't go wrong with them",
+    "info1":"Yummy shoe-string fries fried to a crisp golden brown, served piping hot <br> with your favorite Value Meal, or as the star of the moment.",
+
+    "title2":"ONION RINGS",
+    "tagline2":"One ring to rule them all",
+    "info2":"There's more to sides than fries. Just ask fans of our famous Onion Rings,<br> bursting with refreshing onion goodness inside! Perfect snack on its own or with a meal.",
+
+    "title3":"BK NUGGETS",
+    "tagline3":"Titanic in taste",
+    "info3":"Are all chicken nuggets the same? Only if they're made with the same love <br>as BK Nuggets are. They're crispier. They're juicier. They're tastier. <br>They taste simply incredible with appetite-whetting BBQ sauce. <br> Hungry yet?",
+
+    "title4":"MEXICAN DRUMLETS",
+    "tagline4":"Drum up a good time",
+    "info4":"Time for a flavor fiesta where you let these lightly spiced Mexican drumlets <br> drum up a storm on your tastebuds. Can't stop at one",
+
+    "title5":"CHEESY FRIES",
+    "tagline5":"Gold on gold",
+    "info5":"It's no mystery why it's so popular. Take golden-brown classic French fries and drench <br> with irresistibly distinctive Nacho cheese for a treat that's bursting with aroma and taste. <br> Perfect for lunchtime, dinnertime or any time.",
+
+    "title6":"HASHBROWNS",
+    "tagline6":"Blissful breakfast favourite",
+    "info6":"Make your morning sizzle with a small side of our signature crunchy, golden Hashbrowns."
+  }
+
+
+  document.getElementById("title1").innerHTML = itemDetail.title1;
+  document.getElementById("tagline1").innerHTML = itemDetail.tagline1;
+  document.getElementById("info1").innerHTML = itemDetail.info1;
+
+  document.getElementById("title2").innerHTML = itemDetail.title2;
+  document.getElementById("tagline2").innerHTML = itemDetail.tagline2;
+  document.getElementById("info2").innerHTML = itemDetail.info2;
+
+  document.getElementById("title3").innerHTML = itemDetail.title3;
+  document.getElementById("tagline3").innerHTML = itemDetail.tagline3;
+  document.getElementById("info3").innerHTML = itemDetail.info3;
+
+  document.getElementById("title4").innerHTML = itemDetail.title4;
+  document.getElementById("tagline4").innerHTML = itemDetail.tagline4;
+  document.getElementById("info4").innerHTML = itemDetail.info4;
+
+  document.getElementById("title5").innerHTML = itemDetail.title5;
+  document.getElementById("tagline5").innerHTML = itemDetail.tagline5;
+  document.getElementById("info5").innerHTML = itemDetail.info5;
+
+  document.getElementById("title6").innerHTML = itemDetail.title6;
+  document.getElementById("tagline6").innerHTML = itemDetail.tagline6;
+  document.getElementById("info6").innerHTML = itemDetail.info6;
+
+  window.onscroll = function() {myFunction()};
+
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  
+</script>
+
+</html>
+
+

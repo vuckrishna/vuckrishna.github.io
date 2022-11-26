@@ -1,0 +1,118 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    .navbar{
+        background-color: black;
+        font-size: 18px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding: 5px;
+    }
+    
+    ul{
+        padding-top: 5px;
+    }
+    body{
+        background-color: black;
+    }
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: black;
+        padding-bottom: 5px;
+        color: white;
+        text-align: center;
+        font-size: 18px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .copyright {
+        font-size: 14px;
+    }
+    
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <a href="/">
+            <img class="navbar-brand" src="/img/logo.jpg" alt="Breakfast logo" style="width:150px; height: 60px;">
+        </a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href="signup.html">Sign up</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+  </div>
+</nav>
+
+<div class="container">
+    <div class="main">
+    <form action="#" method="post" onsubmit="return ValidationEvent()">
+        <h2>Javascript Onsubmit Event Example</h2>
+        <label>Name :</label>
+        <input id="name" name="name" placeholder="Name" type="text">
+        <label>Email :</label>
+        <input id="email" name="email" placeholder="Valid Email" type="text">
+        <label>Gender :</label>
+        <input id="male" name="gender" type="radio" value="Male">
+        <label>Male</label>
+        <input id="female" name="gender" type="radio" value="Female">
+        <label>Female</label>
+        <label>Contact No. :</label>
+        <input id="contact" name="contact" placeholder="Contact No." type="text">
+        <input type="submit" value="Submit">
+        <span>All type of validation will execute on OnSubmit Event.</span>
+    </form>
+    </div>
+</div>
+
+</body>
+<script>
+    // Below Function Executes On Form Submit
+    function ValidationEvent() {
+    // Storing Field Values In Variables
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var contact = document.getElementById("contact").value;
+        // Regular Expression For Email
+        var emailReg = /^([w-.]+@([w-]+.)+[w-]{2,4})?$/;
+        // Conditions
+        if (name != '' && email != '' && contact != '') {
+            if (email.match(emailReg)) {
+                if (document.getElementById("male").checked || document.getElementById("female").checked) {
+                    if (contact.length == 10) {
+                        alert("All type of validation has done on OnSubmit event.");
+                        return true;
+                    } else {
+                        alert("The Contact No. must be at least 10 digit long!");
+                        return false;
+                    }
+                } else {
+                    alert("You must select gender.....!");
+                    return false;
+                }
+            } else {
+                alert("Invalid Email Address...!!!");
+                return false;
+            }
+        } else {
+            alert("All fields are required.....!");
+            window.location = "home.html";
+            return false;
+        }
+    }
+</script>
+</html> -->

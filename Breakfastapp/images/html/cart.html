@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cart</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/html/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    p {
+      padding: 0px 10rem;
+      text-align: center;
+
+    }
+    p.card-text {
+      padding: 0px;
+    }
+
+    
+  </style>
+</head>
+<body onload="displayCountries()">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <a href="/">
+            <img class="navbar-brand" src="/img/logo.jpg" alt="Breakfast logo" style="width:150px; height: 60px;">
+        </a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="/html/menu.html">Menu</a></li>
+      <li><a href="/html/about.html">About</a></li>
+      <li><a href="/html/contact.html">Contact Us</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Sign up</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+  </div>
+</nav>
+<p id = "theList"></p>
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <div id = "showCountry" class="modal fade">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+              <h5 class="modal-title">Country Details</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <ul>
+                <li>Country:<p id = "countryName" class="card-text"></p></li>
+            </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal"> Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        Source : <a href="https://www.burgerking.com.sg/"> Burger King</a>
+      </div>
+</body>
+</html>
+
+<script>
+   
+  var countries_array = ["Brazil","China", "France", "Japan", "Russia","USA"];
+  var population_array = ["200 million","1.4 billion", "64 million", "127 million", "143 million", "320 million"]
+  
+  
+  function displayCountries()
+  {   
+      var countryList = document.getElementById("theList");
+  
+      // build a table
+      var info = "<table>";
+  
+      for (var count = 0; count < countries_array.length; count+=3) 
+      {
+          info = info + "<tr>";
+  
+          info = info + "<td>"
+          info = info + '<div class="card card-inverse card-success" style="width: 50rem; padding: 50px 100px;"> \
+                        <!-- <img class="card-img-top" src="..."> -->\
+                         <div class="card-block"> \
+                         <h4 class="card-title">'+countries_array[count]+'</h4> \
+                         <p class="card-text">Population: '+population_array[count]+'</p> \
+                         <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#showCountry" item='+count+' onClick="showCountryDetails(this)">Details</a> \
+                      </div> \
+                    </div>';
+          info = info + "</td>";
+  
+          info = info + "<td>"
+          info = info + '<div class="card card-inverse card-success" style="width: 50rem; padding: 50px 100px;"> \
+                        <!-- <img class="card-img-top" src="..."> -->\
+                         <div class="card-block"> \
+                         <h4 class="card-title">'+countries_array[count+1]+'</h4> \
+                         <p class="card-text">Population: '+population_array[count+1]+'</p> \
+                         <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#showCountry" item=' + (count+1) + ' onClick="showCountryDetails(this)">Details</a> \
+                      </div> \
+                    </div>';
+          info = info + "</td>";
+
+          info = info + "<td>"
+          info = info + '<div class="card card-inverse card-success" style="width: 50rem; padding: 50px 100px;"> \
+                          <!-- <img class="card-img-top" src="..."> -->\
+                         <div class="card-block"> \
+                         <h4 class="card-title">'+countries_array[count+2]+'</h4> \
+                         <p class="card-text">Population: '+population_array[count+2]+'</p> \
+                         <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#showCountry" item=' + (count+2) + ' onClick="showCountryDetails(this)">Details</a> \
+                      </div> \
+                    </div>';
+          info = info + "</td>";
+  
+          info = info + "</tr>";
+      }
+      info = info + "</table>";
+  
+      countryList.innerHTML = info;
+  }
+  function showCountryDetails(element) 
+    {    
+        var item = element.getAttribute("item");
+        var country = document.getElementById("countryName");
+    
+        var info = "<p>";
+        info = info + "The " + countries_array[item] + " has a population of " + population_array[item];
+        info = info + "</p>";
+    
+        country.innerHTML = info;
+    }
+  
+</script>

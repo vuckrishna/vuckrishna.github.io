@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Menu</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/html/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid" id="navbar">
+    <div class="navbar-header">
+      <a href="/">
+        <img class="navbar-brand" src="../img/logo.jpg" alt="Breakfast logo" style="width:150px; height: 60px;">
+      </a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="/html/contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="final">
+  <article>
+    <img src="../img/cf8.jpg" alt="Breakfast logo">
+  </article>
+</div>
+
+<div class="beefburgers">
+  <article>
+    <img src="../img/cf1.png" class="beefitem1" alt="Breakfast logo"><br>
+    <h1 class="beefitem" id="title1"></h1>
+    <h2 id="tagline1"></h2><br>
+    <p id="info1"></p>
+    <p id="calorie1"></p><br>
+  </article>
+</div>
+
+<div class="beefburgers2">
+  <article>
+    <img src="../img/cf2.png" class="beefitem2" alt="Breakfast logo"><br>
+    <h1 class="beefitem" id="title2"></h1>
+    <h2 id="tagline2"></h2><br>
+    <p id="info2"></p>
+    <p id="calorie2"></p><br>
+  </article>
+</div>
+
+<div class="beefburgers">
+  <article>
+    <img src="../img/cf3.png" class="beefitem1" alt="Breakfast logo"><br>
+    <h1 class="beefitem" id="title3"></h1>
+    <h2 id="tagline3"></h2><br>
+    <p id="info3"></p>
+    <p id="calorie3"></p><br>
+  </article>
+</div>
+
+<div class="beefburgers2">
+  <article>
+    <img src="../img/cf4.png" class="beefitem2" alt="Breakfast logo"><br>
+    <h1 class="beefitem" id="title4"></h1>
+    <h2 id="tagline4"></h2><br>
+    <p id="info4"></p>
+    <p id="calorie4"></p><br>
+  </article>
+</div>
+
+<div class="beefburgers">
+  <article>
+    <img src="../img/cf5.png" class="beefitem1" alt="Breakfast logo"><br>
+    <h1 class="beefitem" id="title5"></h1>
+    <h2 id="tagline5"></h2><br>
+    <p id="info5"></p>
+    <p id="calorie5"></p><br>
+  </article>
+</div>
+
+<div class="beefburgers2">
+  <article>
+    <img src="../img/cf6.png" class="beefitem2" alt="Breakfast logo"><br>
+    <h1 class="beefitem" id="title6"></h1>
+    <h2 id="tagline6"></h2><br>
+    <p id="info6"></p>
+    <p id="calorie6"></p><br>
+  </article>
+</div>
+
+<div class="beefburgers">
+  <article>
+    <img src="../img/cf7.png" class="beefitem1" alt="Breakfast logo"><br>
+    <h1 class="beefitem" id="title7"></h1>
+    <h2 id="tagline7"></h2><br>
+    <p id="info7"></p>
+    <p id="calorie7"></p><br>
+  </article>
+</div>
+
+
+<div class="footer">
+      Source : <a href="https://www.burgerking.com.sg/"> Burger King</a>
+</div>
+
+</body>
+
+<script>
+  var itemDetail = {
+    "title1":"ULTIMATE CHICKEN KING",
+    "tagline1":"A Chick worth Drooling Over",
+    "info1":"Crispy on the outside and tender on the inside - get the best of both worlds.<br> Spicy Chicken patty topped with Swiss cheese, savoury Turkey Ham, <br>crispy Turkey Bacon, crisp Batavia Lettuce and creamy Mayo. <br>The ultimate chicken indulgence in between Corn Dusted Sourdough buns.",
+    "calorie1":"Calories: 462.9 kcal",
+
+    "title2":"MUSHROOM SWISS TENDERGRILL® CHICKEN",
+    "tagline2":"So good it'll make you melt",
+    "info2":"Longing for a chicken version of the BK Mushroom Swiss? Well, you're not alone.<br> Just imagine biting into juicy, flame-grilled premium chicken thigh fillet <br>topped with that magical velvety goodness. Yummylicious.",
+    "calorie2":"Calories: 462.9 kcal",
+
+    "title3":"LONG CHICKEN™",
+    "tagline3":"Loooong time favourite - since 1979",
+    "info3":"Delightfully tasty chicken topped with shredded lettuce and creamy mayo, <br>and served on a 7\" sesame seed bun-made extra long because we know <br>you don't want the delicious bites to end so quickly.",
+    "calorie3":"Calories: 602.26 kcal",
+
+    "title4":"SPICY CHICKEN KING",
+    "tagline4":"Crispy outside, tender inside, tasty everywhere",
+    "info4":"Like your chicken crispy, or tender? Why not both? The Spicy Chicken patty <br> made from chicken thigh to be crispy outside and tender inside  is topped freshly <br>shredded lettuce and creamy mayo, then served on a fragrant sesame seed bun.<br> Perfect for those who want the best of both worlds.",
+    "calorie4":"Calories: 627.3 kcal",
+
+    "title5":"TENDERGRILL® CHICKEN",
+    "tagline5":"Check out those thighs",
+    "info5":"Treat yourself to something awesome. A deliciously juicy premium chicken thigh patty <br>that's grilled to perfection, topped with a tomato slice, freshly shredded lettuce and creamy mayo <br>to bring out all the flavours, then served on a soft sesame seed bun. All hail the thigh!",
+    "calorie5":"Calories: 462.9 kcal",
+
+    "title6":"FISH BURGER",
+    "tagline6":"Catch of the day",
+    "info6":"Score a catch of marvelous flavors for your tastebuds with this delightful burger.<br> A succulent fish fillet is embraced by a whole slice of American cheese, and then topped <br>with tangy tartar sauce to accentuate the fish's flavor - and it's all served between a toasted sesame bun.",
+    "calorie6":"Calories: 473.75 kcal",
+
+    "title7":"BBQ CHICKEN BURGER",
+    "tagline7":"CRISPY'N TASTY'N SMOKY",
+    "info7":"We've made the Chicken Burger better with smoky BBQ sauce! The BBQ Chicken Burger <br> a yummylicious crispy chicken fillet, topped with BULL's-EYE BBQ SAUCE for that big ole' <br>burst of smoky, tangy flavor. Lettuce and creamy mayo add crispy and creamy delight to every bite.<br> The fragrant lightly toasted sesame seed bun ensures you'll want another one. <br>It's true. BBQ sauce makes everything awesome, 'N this is proof.",
+    "calorie7":"Calories: 462.9 kcal"
+  }
+
+
+  document.getElementById("title1").innerHTML = itemDetail.title1;
+  document.getElementById("tagline1").innerHTML = itemDetail.tagline1;
+  document.getElementById("info1").innerHTML = itemDetail.info1;
+  document.getElementById("calorie1").innerHTML = itemDetail.calorie1;
+
+  document.getElementById("title2").innerHTML = itemDetail.title2;
+  document.getElementById("tagline2").innerHTML = itemDetail.tagline2;
+  document.getElementById("info2").innerHTML = itemDetail.info2;
+  document.getElementById("calorie2").innerHTML = itemDetail.calorie2;
+
+  document.getElementById("title3").innerHTML = itemDetail.title3;
+  document.getElementById("tagline3").innerHTML = itemDetail.tagline3;
+  document.getElementById("info3").innerHTML = itemDetail.info3;
+  document.getElementById("calorie3").innerHTML = itemDetail.calorie3;
+
+  document.getElementById("title4").innerHTML = itemDetail.title4;
+  document.getElementById("tagline4").innerHTML = itemDetail.tagline4;
+  document.getElementById("info4").innerHTML = itemDetail.info4;
+  document.getElementById("calorie4").innerHTML = itemDetail.calorie4;
+
+  document.getElementById("title5").innerHTML = itemDetail.title5;
+  document.getElementById("tagline5").innerHTML = itemDetail.tagline5;
+  document.getElementById("info5").innerHTML = itemDetail.info5;
+  document.getElementById("calorie5").innerHTML = itemDetail.calorie5;
+
+  document.getElementById("title6").innerHTML = itemDetail.title6;
+  document.getElementById("tagline6").innerHTML = itemDetail.tagline6;
+  document.getElementById("info6").innerHTML = itemDetail.info6;
+  document.getElementById("calorie6").innerHTML = itemDetail.calorie6;
+
+  document.getElementById("title7").innerHTML = itemDetail.title7;
+  document.getElementById("tagline7").innerHTML = itemDetail.tagline7;
+  document.getElementById("info7").innerHTML = itemDetail.info7;
+  document.getElementById("calorie7").innerHTML = itemDetail.calorie7;
+
+  window.onscroll = function() {myFunction()};
+
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  
+</script>
+
+</html>
+
+

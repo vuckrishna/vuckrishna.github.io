@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Menu</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/html/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid" id="navbar">
+    <div class="navbar-header">
+      <a href="/">
+        <img class="navbar-brand" src="../img/logo.jpg" alt="Breakfast logo" style="width:150px; height: 60px;">
+      </a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="/html/contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- <div class="final">
+  <article>
+    <img src="../img/beverages.jpg" alt="Breakfast logo">
+  </article>
+</div> -->
+
+<div class="beefburgers">
+  <article>
+    <img src="../img/b1.png" class="beefitem1" alt="Breakfast logo"><br>
+    <h1 class="beefitem" id="title1"></h1>
+    <h2 id="tagline1"></h2><br>
+    <p id="info1"></p>
+  </article>
+</div>
+
+<div class="beefburgers2">
+  <article>
+    <img src="../img/b2.png" class="beefitem2" alt="Breakfast logo"><br>
+    <h1 class="beefitem" id="title2"></h1>
+    <h2 id="tagline2"></h2><br>
+    <p id="info2"></p>
+  </article>
+</div>
+
+<div class="beefburgers">
+  <article>
+    <img src="../img/b3.png" class="beefitem1" alt="Breakfast logo"><br>
+    <h1 class="beefitem" id="title3"></h1>
+    <h2 id="tagline3"></h2><br>
+    <p id="info3"></p>
+  </article>
+</div>
+
+<div class="beefburgers2">
+  <article>
+    <img src="../img/b4.png" class="beefitem2" alt="Breakfast logo"><br>
+    <h1 class="beefitem" id="title4"></h1>
+    <h2 id="tagline4"></h2><br>
+    <p id="info4"></p>
+  </article>
+</div>
+
+<div class="beefburgers">
+  <article>
+    <img src="../img/b5.png" class="beefitem1" alt="Breakfast logo"><br>
+    <h1 class="beefitem" id="title5"></h1>
+    <h2 id="tagline5"></h2><br>
+    <p id="info5"></p>
+  </article>
+</div>
+
+<div class="beefburgers2">
+  <article>
+    <img src="../img/b6.png" class="beefitem2" alt="Breakfast logo"><br>
+    <h1 class="beefitem" id="title6"></h1>
+    <h2 id="tagline6"></h2><br>
+    <p id="info6"></p>
+  </article>
+</div>
+
+<div class="beefburgers">
+  <article>
+    <img src="../img/b7.png" class="beefitem1" alt="Breakfast logo"><br>
+    <h1 class="beefitem" id="title7"></h1>
+    <h2 id="tagline7"></h2><br>
+    <p id="info7"></p>
+  </article>
+</div>
+<div class="beefburgers2">
+  <article>
+    <img src="../img/b8.png" class="beefitem2" alt="Breakfast logo"><br>
+    <h1 class="beefitem" id="title8"></h1>
+    <h2 id="tagline8"></h2><br>
+    <p id="info8"></p>
+  </article>
+</div>
+
+<div class="beefburgers">
+  <article>
+    <img src="../img/b9.png" class="beefitem1" alt="Breakfast logo"><br>
+    <h1 class="beefitem" id="title9"></h1>
+    <h2 id="tagline9"></h2><br>
+    <p id="info9"></p>
+  </article>
+</div>
+
+<div class="beefburgers2">
+  <article>
+    <img src="../img/b10.png" class="beefitem2" alt="Breakfast logo"><br>
+    <h1 class="beefitem" id="title10"></h1>
+    <h2 id="tagline10"></h2><br>
+    <p id="info10"></p>
+  </article>
+</div>
+
+
+<div class="beefburgers">
+    <article>
+      <img src="../img/b11.png" class="beefitem1" alt="Breakfast logo"><br>
+      <h1 class="beefitem" id="title11"></h1>
+      <h2 id="tagline11"></h2><br>
+      <p id="info11"></p>
+    </article>
+  </div>
+  
+
+
+<div class="footer">
+      Source : <a href="https://www.burgerking.com.sg/"> Burger King</a>
+</div>
+
+</body>
+
+<script>
+  var itemDetail = {
+    "title1":"COCA-COLA®",
+    "tagline1":"Open happiness",
+    "info1":"Perfect with any meal, enjoy the genuine taste of Coca-Cola®.",
+
+    "title2":"COCA-COLA® ZERO",
+    "tagline2":"100% taste, 0% sugar",
+    "info2":"Real Coke taste with zero sugar - it's possible!",
+
+    "title3":"SPRITE®",
+    "tagline3":"Clearly tasty",
+    "info3":"Let Sprite® refresh your day with the great taste of lemon-lime.",
+
+    "title4":"FANTA® GRAPE",
+    "tagline4":"Fantas-grape",
+    "info4":"The grape-flavoured drink you've always loved.",
+
+    "title5":"ICED LEMON TEA",
+    "tagline5":"Refreshment for any occasion",
+    "info5":"You've enjoyed it since forever. So why stop?",
+
+    "title6":"MINUTE MAID® REFRESH™",
+    "tagline6":"Timely refreshment",
+    "info6":"You wanna be refreshed? Here's what you should have.",
+
+    "title7":"JASMINE GREEN TEA",
+    "tagline7":"A quiet, gentle moment",
+    "info7":"A soothing fusion of fragrant Jasmine and green tea for a smooth, delicious flavour.",
+
+    "title8":"SJORA® MANGO PEACH",
+    "tagline8":"The taste of the tropics",
+    "info8":"A refreshing fusion of the flavours of mango and peach. No artificial colouring and flavouring.",
+
+    "title9":"ICED MILO®",
+    "tagline9":"Energy to take you further",
+    "info9":"You know what it is. You know what it does for you. You know how good it tastes. You know you want it.",
+
+    "title10":"DASANI BOTTLED WATER",
+    "tagline10":"Clear winner",
+    "info10":"Hydrate with pure, clean, refreshing and good-tasting water.",
+
+    
+    "title11":"HOT LIPTON TEA",
+    "tagline11":"Honest-ea is the best policy",
+    "info11":"A honest and delicious cup of tea. What else needs to be said?"
+  }
+
+
+  document.getElementById("title1").innerHTML = itemDetail.title1;
+  document.getElementById("tagline1").innerHTML = itemDetail.tagline1;
+  document.getElementById("info1").innerHTML = itemDetail.info1;
+
+  document.getElementById("title2").innerHTML = itemDetail.title2;
+  document.getElementById("tagline2").innerHTML = itemDetail.tagline2;
+  document.getElementById("info2").innerHTML = itemDetail.info2;
+
+  document.getElementById("title3").innerHTML = itemDetail.title3;
+  document.getElementById("tagline3").innerHTML = itemDetail.tagline3;
+  document.getElementById("info3").innerHTML = itemDetail.info3;
+
+  document.getElementById("title4").innerHTML = itemDetail.title4;
+  document.getElementById("tagline4").innerHTML = itemDetail.tagline4;
+  document.getElementById("info4").innerHTML = itemDetail.info4;
+
+  document.getElementById("title5").innerHTML = itemDetail.title5;
+  document.getElementById("tagline5").innerHTML = itemDetail.tagline5;
+  document.getElementById("info5").innerHTML = itemDetail.info5;
+
+  document.getElementById("title6").innerHTML = itemDetail.title6;
+  document.getElementById("tagline6").innerHTML = itemDetail.tagline6;
+  document.getElementById("info6").innerHTML = itemDetail.info6;
+
+  document.getElementById("title7").innerHTML = itemDetail.title7;
+  document.getElementById("tagline7").innerHTML = itemDetail.tagline7;
+  document.getElementById("info7").innerHTML = itemDetail.info7;
+
+  document.getElementById("title8").innerHTML = itemDetail.title8;
+  document.getElementById("tagline8").innerHTML = itemDetail.tagline8;
+  document.getElementById("info8").innerHTML = itemDetail.info8;
+
+  document.getElementById("title9").innerHTML = itemDetail.title9;
+  document.getElementById("tagline9").innerHTML = itemDetail.tagline9;
+  document.getElementById("info9").innerHTML = itemDetail.info9;
+
+  document.getElementById("title10").innerHTML = itemDetail.title10;
+  document.getElementById("tagline10").innerHTML = itemDetail.tagline10;
+  document.getElementById("info10").innerHTML = itemDetail.info10;
+
+  document.getElementById("title11").innerHTML = itemDetail.title11;
+  document.getElementById("tagline11").innerHTML = itemDetail.tagline11;
+  document.getElementById("info11").innerHTML = itemDetail.info11;
+
+  window.onscroll = function() {myFunction()};
+
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  
+</script>
+
+</html>
+
+

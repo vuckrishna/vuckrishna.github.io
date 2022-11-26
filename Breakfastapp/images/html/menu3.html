@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Menu</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/html/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid" id="navbar">
+    <div class="navbar-header">
+      <a href="/">
+        <img class="navbar-brand" src="../img/logo.jpg" alt="Breakfast logo" style="width:150px; height: 60px;">
+      </a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="/html/contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="final">
+  <article>
+    <img src="../img/bf10.jpg" alt="Breakfast logo">
+  </article>
+</div>
+
+<div class="beefburgers">
+  <article>
+    <img src="../img/bf1.png" class="beefitem1" alt="Breakfast logo"><br>
+    <h1 class="beefitem" id="title1"></h1>
+    <h2 id="tagline1"></h2><br>
+    <p id="info1"></p>
+    <p id="calorie1"></p><br>
+  </article>
+</div>
+
+<div class="beefburgers2">
+  <article>
+    <img src="../img/bf2.png" class="beefitem2" alt="Breakfast logo"><br>
+    <h1 class="beefitem" id="title2"></h1>
+    <h2 id="tagline2"></h2><br>
+    <p id="info2"></p>
+    <p id="calorie2"></p><br>
+  </article>
+</div>
+
+<div class="beefburgers">
+  <article>
+    <img src="../img/bf3.png" class="beefitem1" alt="Breakfast logo"><br>
+    <h1 class="beefitem" id="title3"></h1>
+    <h2 id="tagline3"></h2><br>
+    <p id="info3"></p>
+    <p id="calorie3"></p><br>
+  </article>
+</div>
+
+<div class="beefburgers2">
+  <article>
+    <img src="../img/bf4.png" class="beefitem2" alt="Breakfast logo"><br>
+    <h1 class="beefitem" id="title4"></h1>
+    <h2 id="tagline4"></h2><br>
+    <p id="info4"></p>
+    <p id="calorie4"></p><br>
+  </article>
+</div>
+
+<div class="beefburgers">
+  <article>
+    <img src="../img/bf5.png" class="beefitem1" alt="Breakfast logo"><br>
+    <h1 class="beefitem" id="title5"></h1>
+    <h2 id="tagline5"></h2><br>
+    <p id="info5"></p>
+    <p id="calorie5"></p><br>
+  </article>
+</div>
+
+<div class="beefburgers2">
+  <article>
+    <img src="../img/bf6.png" class="beefitem2" alt="Breakfast logo"><br>
+    <h1 class="beefitem" id="title6"></h1>
+    <h2 id="tagline6"></h2><br>
+    <p id="info6"></p>
+    <p id="calorie6"></p><br>
+  </article>
+</div>
+
+<div class="beefburgers">
+  <article>
+    <img src="../img/bf7.png" class="beefitem1" alt="Breakfast logo"><br>
+    <h1 class="beefitem" id="title7"></h1>
+    <h2 id="tagline7"></h2><br>
+    <p id="info7"></p>
+    <p id="calorie7"></p><br>
+  </article>
+</div>
+<div class="beefburgers2">
+  <article>
+    <img src="../img/bf8.png" class="beefitem2" alt="Breakfast logo"><br>
+    <h1 class="beefitem" id="title8"></h1>
+    <h2 id="tagline8"></h2><br>
+    <p id="info8"></p>
+    <p id="calorie8"></p><br>
+  </article>
+</div>
+
+<div class="beefburgers">
+  <article>
+    <img src="../img/bf9.png" class="beefitem1" alt="Breakfast logo"><br>
+    <h1 class="beefitem" id="title9"></h1>
+    <h2 id="tagline9"></h2><br>
+    <p id="info9"></p>
+    <p id="calorie9"></p><br>
+  </article>
+</div>
+
+
+
+<div class="footer">
+      Source : <a href="https://www.burgerking.com.sg/"> Burger King</a>
+</div>
+
+</body>
+
+<script>
+  var itemDetail = {
+    "title1":"TURKEY HAM & CHEESE OMELETTE PLATTER",
+    "tagline1":"Hammy, cheesy, tasty",
+    "info1":"Hammy and cheesy are good... for an omelette. Imagine eggs prepared with yummy turkey ham <br> and melty, flavourful cheese for a delightful morning indulgence. It's all joyfully served with Hash Browns,<br>  a Turkey Sausage, and fresh Cherry Tomato? Sounds good. Really good. Omelettes? Omm nom nom!",
+    "calorie1":"Calories: 462.9 kcal",
+
+    "title2":"PANCAKES WITH SAUSAGE PLATTER",
+    "tagline2":"Sweet'N Savoury",
+    "info2":"Pamper your taste buds gently, softly, fluffily and happily with a stack of large pancakes.<br>  Then fill up on Hash Browns - fried to perfection - and a yummy flame - grilled turkey<br>  sausage patty to wrap up your wonderful breakfast. Mmmm, yummy.",
+    "calorie2":"Calories: 462.9 kcal",
+
+    "title3":"PANCAKES PLATTER",
+    "tagline3":"Paancaakees!",
+    "info3":"To understand why 'selling like hot cakes' is used to describe some extremely popular item, <br> you have to first experience how hot cakes bloom with goodness in the mouth. Savour the gentle, <br> refreshing aroma. Taste the light fluffiness. Appreciate how simple maple syrup makes it even better.<br>  Who can resist it? Comes with Hash Browns for more hearty fulfilment.",
+    "calorie3":"Calories: 381.4 kcal",
+
+    "title4":"TURKEY HAM CROISSAN'WICH® WITH EGG",
+    "tagline4":"Hamtastic",
+    "info4":"Nothing says breakfast like ham and eggs. Served with Turkey Ham, topped with egg and <br> melted American cheese, all on a buttery and fluffy Croissan'wich®.<br>  It's what all breakfasts should be like.",
+    "calorie4":"Calories: 627.3 kcal",
+
+    "title5":"CHICKEN SAUSAGE CROISSAN'WICH® WITH EGG",
+    "tagline5":"Seriously patty-licious",
+    "info5":"An honest-to-goodness breakfast with which to rise and shine. Take flavourful breakfast<br>  chicken sausage patty, fluffy egg and a slice of good ol' American cheese, then sandwich<br>  it all in the Croissan'wich® that's crisp and flaky outside, and oh-so-buttery inside. <br> It'll make you think you're still dreaming.",
+    "calorie5":"Calories: 462.9 kcal",
+
+    "title6":"TURKEY BACON CROISSAN'WICH® WITH EGG",
+    "tagline6":"You'll be bac(on) for seconds",
+    "info6":"The fluffiness of BK's special egg meets the crispiness of turkey bacon for an unforgettable eating experience! <br> Find it all sandwiched in a buttery Croissan'wich® with a slice of robust American cheese <br>  to give your taste buds the wakeup call it needs.",
+    "calorie6":"Calories: 400.5 kcal",
+
+    "title7":"CHICKEN SAUSAGE CROISSAN'WICH®",
+    "tagline7":"Seriously patty-licious",
+    "info7":"An honest-to-goodness breakfast with which to rise and shine. Take flavourful breakfast<br>  chicken sausage patty, fluffy egg and a slice of good ol' American cheese, then sandwich<br>  it all in the Croissan'wich® that's crisp and flaky outside, and oh-so-buttery inside. <br> It'll make you think you're still dreaming.",
+    "calorie7":"Calories: 462.9 kcal",
+
+    "title8":"MUSHROOM SWISS CROISSAN'WICH® WITH EGG",
+    "tagline8":"Good velvety morning",
+    "info8":"A wake-up call for your taste buds. Sizzling turkey sausage topped with melt-in-your-mouth Swiss Cheese, <br> egg and mushroom sautéed sauce all on a buttery and fluffy Croissan'wich®. <br> You'll be surprised at how much you'll look forward to mornings from now on!",
+    "calorie8":"Calories: 462.9 kcal",
+
+    "title9":"CHICKEN CROISSAN'WICH®",
+    "tagline9":"Mornin' made excitin'!",
+    "info9":"Why just have breakfast when you can have a taste adventure? A deliciously crispy chicken fillet,<br> creamy mayo and robust American cheese come together inside a fluffy, buttery Croissan'wich® bun <br> to bring you to cloud nine in one bite! ",
+    "calorie9":"Calories: 364 kcal"
+  }
+
+
+  document.getElementById("title1").innerHTML = itemDetail.title1;
+  document.getElementById("tagline1").innerHTML = itemDetail.tagline1;
+  document.getElementById("info1").innerHTML = itemDetail.info1;
+  document.getElementById("calorie1").innerHTML = itemDetail.calorie1;
+
+  document.getElementById("title2").innerHTML = itemDetail.title2;
+  document.getElementById("tagline2").innerHTML = itemDetail.tagline2;
+  document.getElementById("info2").innerHTML = itemDetail.info2;
+  document.getElementById("calorie2").innerHTML = itemDetail.calorie2;
+
+  document.getElementById("title3").innerHTML = itemDetail.title3;
+  document.getElementById("tagline3").innerHTML = itemDetail.tagline3;
+  document.getElementById("info3").innerHTML = itemDetail.info3;
+  document.getElementById("calorie3").innerHTML = itemDetail.calorie3;
+
+  document.getElementById("title4").innerHTML = itemDetail.title4;
+  document.getElementById("tagline4").innerHTML = itemDetail.tagline4;
+  document.getElementById("info4").innerHTML = itemDetail.info4;
+  document.getElementById("calorie4").innerHTML = itemDetail.calorie4;
+
+  document.getElementById("title5").innerHTML = itemDetail.title5;
+  document.getElementById("tagline5").innerHTML = itemDetail.tagline5;
+  document.getElementById("info5").innerHTML = itemDetail.info5;
+  document.getElementById("calorie5").innerHTML = itemDetail.calorie5;
+
+  document.getElementById("title6").innerHTML = itemDetail.title6;
+  document.getElementById("tagline6").innerHTML = itemDetail.tagline6;
+  document.getElementById("info6").innerHTML = itemDetail.info6;
+  document.getElementById("calorie6").innerHTML = itemDetail.calorie6;
+
+  document.getElementById("title7").innerHTML = itemDetail.title7;
+  document.getElementById("tagline7").innerHTML = itemDetail.tagline7;
+  document.getElementById("info7").innerHTML = itemDetail.info7;
+  document.getElementById("calorie7").innerHTML = itemDetail.calorie7;
+
+  document.getElementById("title8").innerHTML = itemDetail.title8;
+  document.getElementById("tagline8").innerHTML = itemDetail.tagline8;
+  document.getElementById("info8").innerHTML = itemDetail.info8;
+  document.getElementById("calorie8").innerHTML = itemDetail.calorie8;
+
+  document.getElementById("title9").innerHTML = itemDetail.title9;
+  document.getElementById("tagline9").innerHTML = itemDetail.tagline9;
+  document.getElementById("info9").innerHTML = itemDetail.info9;
+  document.getElementById("calorie9").innerHTML = itemDetail.calorie9;
+
+  window.onscroll = function() {myFunction()};
+
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+
+</script>
+
+</html>
+
+

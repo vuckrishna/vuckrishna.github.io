@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Menu</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/html/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid" id="navbar">
+    <div class="navbar-header">
+      <a href="/">
+        <img class="navbar-brand" src="../img/logo.jpg" alt="Breakfast logo" style="width:150px; height: 60px;">
+      </a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="/html/contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="final">
+  <article>
+    <img src="../img/sw6.jpg" alt="Breakfast logo">
+  </article>
+</div>
+
+<div class="beefburgers">
+  <article>
+    <img src="../img/sw1.png" class="beefitem1" alt="Breakfast logo"><br>
+    <h1 class="beefitem" id="title1"></h1>
+    <h2 id="tagline1"></h2><br>
+    <p id="info1"></p>
+  </article>
+</div>
+
+<div class="beefburgers2">
+  <article>
+    <img src="../img/sw2.png" class="beefitem2" alt="Breakfast logo"><br>
+    <h1 class="beefitem" id="title2"></h1>
+    <h2 id="tagline2"></h2><br>
+    <p id="info2"></p>
+  </article>
+</div>
+
+<div class="beefburgers">
+  <article>
+    <img src="../img/sw3.png" class="beefitem1" alt="Breakfast logo"><br>
+    <h1 class="beefitem" id="title3"></h1>
+    <h2 id="tagline3"></h2><br>
+    <p id="info3"></p>
+  </article>
+</div>
+
+<div class="beefburgers2">
+  <article>
+    <img src="../img/sw4.png" class="beefitem2" alt="Breakfast logo"><br>
+    <h1 class="beefitem" id="title4"></h1>
+    <h2 id="tagline4"></h2><br>
+    <p id="info4"></p>
+  </article>
+</div>
+
+<div class="beefburgers">
+  <article>
+    <img src="../img/sw5.png" class="beefitem1" alt="Breakfast logo"><br>
+    <h1 class="beefitem" id="title5"></h1>
+    <h2 id="tagline5"></h2><br>
+    <p id="info5"></p>
+  </article>
+</div>
+
+
+<div class="footer">
+      Source : <a href="https://www.burgerking.com.sg/"> Burger King</a>
+</div>
+
+</body>
+
+<script>
+  var itemDetail = {
+    "title1":"HERSHEY'S® SUNDAE PIE",
+    "tagline1":"Make today feel like Sunday",
+    "info1":"A crunchy chocolate crust, with chocolate ice cream filling and topped with whipped cream and HERSHEY'S® chocolate chips. Any day will feel like Sunday with this creamy ice cream dessert.",
+
+    "title2":"TARO TURNOVER",
+    "tagline2":"It'll win over your heart",
+    "info2":"Sweet taro chunks in a crispy pie crust. It'll win you over in a bite! Perfect after meals.",
+
+    "title3":"VANILLA CONE",
+    "tagline3":"Ice, Ice Baby",
+    "info3":"In the mood for some back-to-basics ice cream goodness? Get this timeless classic to go!",
+
+    "title4":"CHOCOLATE SUNDAE",
+    "tagline4":"A chocolaty dream",
+    "info4":"Cool and creamy with a chocolate fudge swirl, our made-to-order Chocolate Fudge Sundae <br> is complemented by our velvety Vanilla Soft Serve.",
+
+    "title5":"STRAWBERRY SUNDAE",
+    "tagline5":"Berry tasty",
+    "info5":"There's a good reason why strawberry is such a popular flavor. Try this sweet treat to find out!"
+  }
+
+
+  document.getElementById("title1").innerHTML = itemDetail.title1;
+  document.getElementById("tagline1").innerHTML = itemDetail.tagline1;
+  document.getElementById("info1").innerHTML = itemDetail.info1;
+
+  document.getElementById("title2").innerHTML = itemDetail.title2;
+  document.getElementById("tagline2").innerHTML = itemDetail.tagline2;
+  document.getElementById("info2").innerHTML = itemDetail.info2;
+
+  document.getElementById("title3").innerHTML = itemDetail.title3;
+  document.getElementById("tagline3").innerHTML = itemDetail.tagline3;
+  document.getElementById("info3").innerHTML = itemDetail.info3;
+
+  document.getElementById("title4").innerHTML = itemDetail.title4;
+  document.getElementById("tagline4").innerHTML = itemDetail.tagline4;
+  document.getElementById("info4").innerHTML = itemDetail.info4;
+
+  document.getElementById("title5").innerHTML = itemDetail.title5;
+  document.getElementById("tagline5").innerHTML = itemDetail.tagline5;
+  document.getElementById("info5").innerHTML = itemDetail.info5;
+
+  window.onscroll = function() {myFunction()};
+
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+
+</script>
+
+</html>
+
+

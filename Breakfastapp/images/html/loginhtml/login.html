@@ -1,0 +1,100 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    .navbar{
+        background-color: black;
+        font-size: 18px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding: 5px;
+    }
+    
+    ul{
+        padding-top: 5px;
+    }
+    body{
+        background-color: black;
+    }
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: black;
+        padding-bottom: 5px;
+        color: white;
+        text-align: center;
+        font-size: 18px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .copyright {
+        font-size: 14px;
+    }
+    
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <a href="/">
+            <img class="navbar-brand" src="/img/logo.jpg" alt="Breakfast logo" style="width:150px; height: 60px;">
+        </a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href="signup.html">Sign up</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+  </div>
+</nav>
+
+<div class="container">
+    <div class="main">
+    <h2>Javascript Login Form Validation</h2>
+    <form id="form_id" method="post" name="myform">
+    <label>User Name :</label>
+    <input type="text" name="username" id="username"/>
+    <label>Password :</label>
+    <input type="password" name="password" id="password"/>
+    <input type="button" value="Login" id="submit" onclick="validate()"/>
+    </form>
+    <span><b class="note">Note : </b>For this demo use following username and password. <br/><b class="valid">User Name : test<br/>Password : test</b></span>
+    </div>
+    </div>
+
+</body>
+<script>
+    var attempt = 3; // Variable to count number of attempts.
+// Below function Executes on click of login button.
+    function validate(){
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        if ( username == "test" && password == "test"){
+            alert ("Login successfully");
+            window.location = "home.html"; // Redirecting to other page.
+        return false;
+    }
+    else{
+        attempt --;// Decrementing by one.
+        alert("You have left "+attempt+" attempt;");
+    // Disabling fields after 3 attempts.
+        if( attempt == 0){
+            document.getElementById("username").disabled = true;
+            document.getElementById("password").disabled = true;
+            document.getElementById("submit").disabled = true;
+    return false;
+    }
+    }
+    }
+</script>
+</html> -->
