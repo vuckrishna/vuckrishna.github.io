@@ -1,2 +1,0 @@
-17-309-vgz,morgan,98765432,morgan@hotmail.com,100
-19-000-uio,kk,80808080,kkk@gmail.com,1000
