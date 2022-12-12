@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "149936110564",
+    "firebase_url": "https://sgtours-845a9-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "sgtours-845a9",
+    "storage_bucket": "sgtours-845a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:149936110564:android:d4b9b98e70a141cae325f1",
+        "android_client_info": {
+          "package_name": "com.example.sgtours"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "149936110564-d1kg3u6hkajedvrc86bai3fa4f6ruvnj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBiFOZ7OZx-6yk2txfzVJ2XVj6xKTyyig"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "149936110564-d1kg3u6hkajedvrc86bai3fa4f6ruvnj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "149936110564-0n6sn53assq1tpqf0lhr78bmrhpf780f.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.sgtours"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

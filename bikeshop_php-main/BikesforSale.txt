@@ -1,0 +1,20 @@
+Name: krishna
+Phone: 00000000
+E-mail: email@gmail.com
+Serial NumBER: 345rty6
+Type: Car
+Description: good
+Year of Manufacture: 1999
+Characteristics: cafe racer
+Condition: mint
+
+Name: krishna
+Phone: 00000000
+E-mail: email@gmail.com
+Serial NumBER: 345rty6
+Type: Car
+Description: good
+Year of Manufacture: 1999
+Characteristics: cafe racer
+Condition: mint
+
