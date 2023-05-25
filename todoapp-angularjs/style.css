@@ -5,34 +5,34 @@ body {
     width: 500px;
     text-align: center;
     margin: 0 auto;
-    border: 2px solid rgb(240, 240, 240);
+    border: 5px solid lightcyan;
     margin-top: 50px;
     font-family: sans-serif;
     border-radius: 20px;
-    background-color: lightblue;
-    padding: 20px 50px;
+    background-color: white;
+    padding: 0px 30px;
 }
 h1 {
     text-align: center;
-    background-color: white;
+    background-color: lightcyan;
     padding: 20px 0px;
     /* margin-top: 0px; */
     margin: 30px 20px;
     border-radius: 10px;
-    border: 2px solid rgb(240, 240, 240);
-    color: lightblue;
+    border-bottom: 3px solid lightgrey;
+    color: turquoise;
 }
 ul {
     list-style: none;
     font-size: 20px;
-    color: lightblue;
+    color: turquoise;
     margin-left: -40px;
     margin-bottom: 20px;
 }
 li {
     /* border-bottom: 1px solid #ededed; */
-    border: 1px solid rgb(240, 240, 240);
-    background-color: white;
+    border-bottom: 3px solid lightgrey;
+    background-color: lightcyan;
     padding: 15px 5px;
     margin-bottom: 10px;
     margin-left: 60px;
@@ -55,9 +55,9 @@ li span {
     width: 70%;
     height: 30px;
     margin: 0px 10px;
-    border: 3px solid rgb(240, 240, 240);
+    border: 3px solid turquoise;
     border-radius: 5px;
-    background: transparent;
+    background: lightcyan;
 }
 .addItem button {
     height: 35px;
@@ -65,7 +65,7 @@ li span {
     margin: 0px 10px;
     border-radius: 5px;
     font-weight: 700;
-    background-color: white;
-    border: 2px solid rgb(240, 240, 240);
-    color: lightblue;
+    background-color: lightcyan;
+    border: 2px solid turquoise;
+    color: turquoise;
 }
