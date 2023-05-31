@@ -14,25 +14,25 @@ body {
 }
 h1 {
     text-align: center;
-    background-color: black;
+    background-color: lightcyan;
     padding: 20px 0px;
     /* margin-top: 0px; */
     margin: 30px 20px;
     border-radius: 10px;
     border-bottom: 3px solid lightgrey;
-    color: turquoise;
+    color: black;
 }
 ul {
     list-style: none;
     font-size: 20px;
-    color: turquoise;
+    color: black;
     margin-left: -40px;
     margin-bottom: 20px;
 }
 li {
     /* border-bottom: 1px solid #ededed; */
     border-bottom: 3px solid lightgrey;
-    background-color: black;
+    background-color: lightcyan;
     padding: 15px 5px;
     margin-bottom: 10px;
     margin-left: 60px;
@@ -65,7 +65,7 @@ li span {
     margin: 0px 10px;
     border-radius: 5px;
     font-weight: 700;
-    background-color: black;
+    background-color: lightcyan;
     border: 2px solid turquoise;
-    color: turquoise;
+    color: black;
 }
