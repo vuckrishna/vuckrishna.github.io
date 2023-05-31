@@ -20,12 +20,12 @@ h1 {
     margin: 30px 20px;
     border-radius: 10px;
     border-bottom: 3px solid lightgrey;
-    color: black;
+    color: turquoise;
 }
 ul {
     list-style: none;
     font-size: 20px;
-    color: black;
+    color: turquoise;
     margin-left: -40px;
     margin-bottom: 20px;
 }
@@ -67,5 +67,5 @@ li span {
     font-weight: 700;
     background-color: lightcyan;
     border: 2px solid turquoise;
-    color: black;
+    color: turquoise;
 }
