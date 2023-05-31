@@ -14,7 +14,7 @@ body {
 }
 h1 {
     text-align: center;
-    background-color: lightcyan;
+    background-color: black;
     padding: 20px 0px;
     /* margin-top: 0px; */
     margin: 30px 20px;
@@ -32,7 +32,7 @@ ul {
 li {
     /* border-bottom: 1px solid #ededed; */
     border-bottom: 3px solid lightgrey;
-    background-color: lightcyan;
+    background-color: black;
     padding: 15px 5px;
     margin-bottom: 10px;
     margin-left: 60px;
@@ -65,7 +65,7 @@ li span {
     margin: 0px 10px;
     border-radius: 5px;
     font-weight: 700;
-    background-color: lightcyan;
+    background-color: black;
     border: 2px solid turquoise;
     color: turquoise;
 }
