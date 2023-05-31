@@ -1,0 +1,101 @@
+body {
+    background-color:black; /* black */ 
+    font-family:'Courier New', Courier, monospace;
+
+}
+div {
+    padding: 50px;
+}
+#indexli {
+    padding: 20px 50px;
+}
+form {
+    text-align: center;
+    font-weight: bold;
+}
+input {
+    font-weight: bold;
+}
+table {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+button {
+    margin: 0;
+    padding: 5px 10px;
+}
+#btable {
+    margin: auto;
+    text-align: center;
+}
+td {
+    padding: 50px 50px;
+}
+th {
+    padding: 50px 50px;
+}
+#bpad1 {
+    padding: 0px 20px 0px 0px;
+    text-align: right;
+}
+#bpad2 {
+    padding: 0px 20px 0px 0px;
+    text-align: left;
+}
+#bpic {
+    padding: 20px 30px 0 30px;
+}
+ul {
+    overflow: hidden;
+    background-color: black; /* light coroal or black */
+    border-radius: 25px;
+    list-style-type: none;
+    padding-inline-start: 0px;
+    width: max-content;
+    margin: auto;
+    outline: 3px solid lightsalmon; /* 1px */
+    color: lightsalmon;
+}
+#blist {
+    overflow: hidden;
+    background-color:  black;
+    border-radius: 25px;
+    list-style-type: none;
+    padding-inline-start: 0px;
+    width: max-content;
+    margin: auto;
+    outline: 3px solid lightsalmon;
+    padding: 20px;
+}
+
+#blist2 {
+    overflow: hidden;
+    background-color:  black;
+    border-radius: 25px;
+    list-style-type: none;
+    padding-inline-start: 0px;
+    width: max-content;
+    margin: auto;
+    padding: 0px 25px 20px 25px;
+}
+
+li {
+float: left;
+font-weight: bold;
+}
+
+li a {
+    display: inline-block;
+    color: lightsalmon;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 50px;
+    list-style-type: none;
+}
+a { text-decoration: none; }
+h3 {
+    color: lightsalmon;
+}
+h2 {
+    color: lightsalmon;
+}
