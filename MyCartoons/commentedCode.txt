@@ -1,0 +1,38 @@
+    <!-- <div class="cards" id="cards">
+            <a href="https://archive.org/details/totoro-foxdub">
+                <img src="totoro2.jpg" alt="">
+                <p>My Neighbour Totoro</p>
+            </a>
+        </div>
+        <div class="cards" id="cards">
+            <a href="">
+                <img src="totoro.jpg" alt="">
+                <p>My Neighbour Totoro</p>
+            </a>
+        </div>
+        <div class="cards" id="cards">
+            <a href="">
+                <img src="totoro.jpg" alt="">
+                <p>My Neighbour Totoro</p>
+            </a>
+        </div> -->
+        <!-- <div class="cards">
+            <img src="totoro.jpg" alt="">
+            <p>My Neighbour Totoro</p>
+        </div> -->
+
+JS:
+
+//    listItems = listItems + "<a href="+movie.movieLink+"></a>"
+//    listItems = listItems + "<img src="+movie.imagePath+">"
+//    listItems = listItems + "<p>"+movie.movieName+"</p>" 
+
+    // const movieName = element.getElementsByClassName(".movieNames");
+    // movieName.style.backgroundColor = "black";
+
+    // left at p element color change 
+    
+    // element.querySelectorAll(".movieNames").style.backgroundColor = "black";
+    // const movieName = document.getElementById("movieNames");
+    // movieName.style.backgroundColor = "black";
+    // document.getElementsByTagName("P").style.backgroundColor = "black";

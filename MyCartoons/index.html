@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCartoons</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!--Favourite icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Box-icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div id="header">
+        <a href="">Home</a>
+        <a href="">Cartoons</a>
+        <a href="">Movies</a>
+        <a href="">Serials</a>
+        <a href="">Search</a>
+        <button type="button" id="darkMode" onclick="darkMode()">Dark</button>
+    </div>
+    <div class="post-filter container">
+        <!-- <span class="filter-item active-filter" data-filter="all">All</span> -->
+        <span class="filter-item active-filter" data-filter="all" onclick="index.html">Filter</span>
+        <span class="filter-item" data-filter="cartoon">Cartoons</span>
+        <span class="filter-item" data-filter="movie">Movies</span>
+        <span class="filter-item" data-filter="serial">Serials</span>
+    </div>
+    <div id="container">
+    </div>
+ <script src="script.js"></script>
+</body>
+</html>
