@@ -1,9 +1,11 @@
-@import url(https://db.onlinewebfonts.com/c/56ee0a3bf4422be57bbc6f8a76bd68c9?family=Caros+Bold);
-@import url(https://db.onlinewebfonts.com/c/0db6ab71ff29a15314f8eef88f0d63a2?family=Caros+Black);
-@import url(https://db.onlinewebfonts.com/c/58e6c78aa3d79ae3187555308dce17a8?family=Caros+Medium);
+/* @import url(https://db.onlinewebfonts.com/c/56ee0a3bf4422be57bbc6f8a76bd68c9?family=Caros+Bold); */
+/* @import url(https://db.onlinewebfonts.com/c/0db6ab71ff29a15314f8eef88f0d63a2?family=Caros+Black); */
+/* @import url(https://db.onlinewebfonts.com/c/58e6c78aa3d79ae3187555308dce17a8?family=Caros+Medium); */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
 body{
-  font-family: "Caros Bold";
+  font-family: "Caros Bold","Roboto";
   background-color: white;
 }
 
@@ -11,15 +13,16 @@ body{
     display: grid;
     /* border: 2px solid lightseagreen; */
     /* border-radius: 20px; */
-    grid-template-columns: repeat(6, 17%);
+    grid-template-columns: repeat(7, 14%);
     padding: 20px;
+    padding-bottom: 25px;
     text-align: center; 
     font-size: 20px;
-    border-radius: 15px;
+    border-radius: 10px;
     /* background-color: rgb(235, 235, 235); */
     /* background-color: lightseagreen; */
-    margin: 30px 180px;
-    margin-bottom: 10px;
+    margin: 30px 80px;
+    /* margin-bottom: 10px; */
     height: 20px;
     box-shadow: lightseagreen 1px 0 20px;
     background-color: teal; /* new change*/
@@ -32,56 +35,69 @@ body{
     font-size: 25px;
 }
 /* new button added*/
-#header button {
-    font-family: "Caros Bold";
+#darkMode, #searchbtn, #searchInput {
+    font-family: "Caros Bold","Roboto";
     width: fit-content;
+    /* height: auto; */
     background-color: white;
     border: 0px solid black;
     font-size: 20px;
     color: lightseagreen;
-    margin-left: 40px;
-    border-radius: 4px;
-    width: 80px;
+    /* margin-left: 40px; */
+    border-radius: 6px;
+    width: 100px;
+    /* margin-bottom: 10px; */
     /* box-shadow: lightseagreen 1px 0 10px; */
 }
 
-#header button:hover{
+
+#searchInput {
+    border: 5px solid white;
+    margin-left: 45px;
+    width: 250px;
+    font-size: 16px;
+    /* margin-bottom: 10px; */
+    padding-left: 10px;
+}
+
+#darkMode {
+        margin-left: 100px;  
+        border-radius: 10px;
+}
+
+#searchbtn {
+    /* margin-left: 120px; */
+    margin-left: 100px;
+    color: lightseagreen;
+    width: 50px;
+    /* padding: 2px; */
+}
+
+#darkMode:hover{
     font-size: 25px;
 }
 
 #container {
     display: flex;
-    /* flex: 3; */
-    /* margin: 10px; */
-    justify-content: center;
-    height: 550px;
-    flex-wrap: wrap; /* new thing flex with responsive*/
-    /* margin-top: 0px; */
-    /* text-shadow: lightseagreen 1px 0px 10px; */
+    /* flex: 1; */
+    justify-content:center;
+    height: auto;
+    flex-wrap: wrap; 
+    /* new thing flex with responsive*/
 
 }
 .cards {
-    /* border: 4px solid lightseagreen; */
     border-radius: 25px;
-    /* background-color: lightcoral; */
-    /* background-color: lightseagreen; */
-    /* border: 3px solid black; */
-    /* /* background-color: black; */
-    color:black;
-    width: auto;
-    height: auto;
-    /* width: auto;
-    height: auto; */
-    margin: 20px 40px;
+    /* color:black; */
+    margin: 20px 10px;
     text-align: center;
     padding: 10px;
-    /* padding-bottom: 50px; */
 }
 
 .cards img {
     width: 300px;
     height: 420px;
-    border-radius: 15px;
+    border-radius: 10px;
     margin-top: 15px;
     box-shadow:  10px 0px 10px lightseagreen;
     /* border: 3px solid lightseagreen; */
@@ -90,13 +106,13 @@ body{
 .cards img:hover{
     /* border: 4px solid white; */
     border: 1px solid lightseagreen;
-    box-shadow:  30px 5px 30px lightseagreen;
+    box-shadow:  20px 0px 20px lightseagreen;
 }
 .cards p:hover{
     /* border: 4px solid dodgerblue; */
     /* box-shadow:  15px 10px 30px dodgerblue; */
     /* text-shadow: 25px 10px 10px dodgerblue; */
-    font-size: 23px;
+    font-size: 22px;
     /* color: black; */
 }
 
@@ -108,7 +124,7 @@ body{
 
 .cards p{
     /* line-height: 10px; */
-    font-size: 22px;
+    font-size: 20px;
     margin: 10px auto auto auto;
     /* height: 30px; */
     border-radius: 10px;
@@ -118,8 +134,9 @@ body{
     cursor: pointer;
     /* border: 2px solid black; */
     color: white;
-        background-color: teal;
-        box-shadow: lightseagreen 0px 0 10px;
+    background-color: teal;
+    box-shadow: lightseagreen 0px 0 20px;
+    /* opacity: 0.9; */
 }
 
 /* New filter function */
