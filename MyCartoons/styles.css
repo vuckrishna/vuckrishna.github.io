@@ -177,3 +177,10 @@ body{
 .cards span {
     font-size: 30px;
 }
+
+.darkmodeOn{
+    background-color: black !important;
+}
+.movieNamedm{
+    background-color: black;
+}

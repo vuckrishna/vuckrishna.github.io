@@ -11,6 +11,9 @@
     <!-- Box-icon -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://db.onlinewebfonts.com/c/56ee0a3bf4422be57bbc6f8a76bd68c9?family=Caros+Bold" rel="stylesheet">
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', (event) => {  ((localStorage.getItem('mode') || 'dark') === 'dark') ? document.querySelector('body').classList.add('darkmodeOn') : document.querySelector('body').classList.remove('darkmodeOn')})
+    </script> -->
 </head>
 <body>
     <div id="header">
@@ -18,7 +21,7 @@
         <a href="#">Add New</a>
         <a href="#">Favourites</a>
         <a href="devStack.html">Dev Stack</a>
-        <button type="button" id="darkMode" onclick="darkMode()">Dark</button>
+        <button type="button" id="darkMode" onclick="dark()">Dark</button>
         <input type="text" placeholder="Search.." name="search" id="searchInput">
         <button type="submit" id="searchbtn"><i class="fa fa-search"></i></button>    
          <!-- <a href="">Search</a> -->
@@ -27,8 +30,8 @@
         Name: <input type="text" name="fname">
         <input type="submit" value="Submit">
     </form>
- <script src="script.js"></script>
- <script src="darkMode.js"></script>
+    <script src="script.js"></script>
+    <script src="darkMode.js"></script>
 
 </body>
 </html>

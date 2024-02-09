@@ -1,45 +1,50 @@
 // dark mode code 
-
-// const toggleButton = document.getElementById('toggle-button');
-// const body = document.body;
-
-// // Check for saved 'darkMode' in localStorage
-// const darkMode = localStorage.getItem('darkMode');
-
-// if (darkMode) {
-//     body.classList.add('dark-mode');
+// function darkMode(){
+//     let color1 = document.getElementById("darkMode").innerText;
+//     if ( color1 == "Light"){
+//       lightMode();
+//     }
+//     else{
+//       dark();
+//     }
 // }
 
-// toggleButton.onclick = function() {
-//     body.classList.toggle('dark-mode');
-
-//     // Save the current preference to localStorage
-//     localStorage.setItem('darkMode', body.classList.contains('dark-mode'));
+// function darkmodeCheck(){
+//   // let check = document.body.style.backgroundColor;
+//   if (document.body.style.backgroundColor != "white"){
+//     dark();
+//   }else {
+//   }
 // }
+// localStorage.setItem("mode", "dark");
 
-function darkMode(){
-    let color1 = document.getElementById("darkMode").innerText;
-    if ( color1 == "Light"){
-      lightMode();
-    }
-    else{
-      dark();
-    }
-}
+
 
 function dark(){
-  document.body.style.backgroundColor = "black";
-  document.getElementById("darkMode").style.backgroundColor = "white";
-  $(".movieNames").css("background-color", "black");
-  $("#header").css("background-color", "black");
-  document.getElementById("darkMode").innerText = "Light";
+  let bodyColor = document.body;
+  bodyColor.classList.toggle("darkmodeOn");
+
+  let movieNames = document.getElementsByTagName("p");
+  console.log(movieNames);
+  for (let index of movieNames){
+    index.classList.toggle("darkmodeOn");
+  }
+
+  let headerColor = document.getElementById("header");
+  headerColor.classList.toggle("darkmodeOn");
+  
+  // document.body.style.backgroundColor = "black";
+  // document.getElementById("darkMode").style.backgroundColor = "white";
+  // $(".movieNames").css("background-color", "black");
+  // $("#header").css("background-color", "black");
+  // document.getElementById("darkMode").innerText = "Light";
 }
 
-function lightMode(){
-    document.body.style.backgroundColor = "white";
-    document.getElementById("darkMode").style.backgroundColor = "white";
-    $(".movieNames").css("background-color", "teal");
-    $(".movieNames").css("color", "white");
-    $("#header").css("background-color", "teal");
-    document.getElementById("darkMode").innerText = "Dark";
-}
+// function lightMode(){
+//     document.body.style.backgroundColor = "white";
+//     document.getElementById("darkMode").style.backgroundColor = "white";
+//     $(".movieNames").css("background-color", "teal");
+//     $(".movieNames").css("color", "white");
+//     $("#header").css("background-color", "teal");
+//     document.getElementById("darkMode").innerText = "Dark";
+// }
