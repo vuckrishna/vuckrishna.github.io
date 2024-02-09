@@ -29,7 +29,7 @@ const movies = [
     movieLink: "https://www.wcofun.tv/anime/avatar-the-last-airbender-book-1-water",
     imagePath: "https://m.media-amazon.com/images/I/916XiNKSc6L._AC_UF1000,1000_QL80_.jpg",
     movieName: "Avatar the last airbender",
-    genre:"serial"
+    genre:"cartoon"
     },
     {
     movieLink: "https://archive.org/details/totoro-foxdub",
@@ -44,17 +44,35 @@ const movies = [
     genre:"movie"
     },
     {
-      movieLink: "https://www.wcofun.tv/anime/the-legend-of-korra",
-      imagePath: "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p9157227_b_v9_aw.jpg",
-      movieName: "The Legend of Korra",
-      genre:"serial"
-      },
-      {
-        movieLink: "https://www.wcofun.tv/anime/the-legend-of-korra",
-        imagePath: "https://m.media-amazon.com/images/M/MV5BMTM1MTI5ODU4MV5BMl5BanBnXkFtZTcwNTYyNTU4Mg@@._V1_.jpg",
-        movieName: "A Christmas Carol",
-        genre:"movie"
-        }
+    movieLink: "https://www.wcofun.tv/anime/the-legend-of-korra",
+    imagePath: "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p9157227_b_v9_aw.jpg",
+    movieName: "The Legend of Korra",
+    genre:"cartoon"
+    },
+    {
+    movieLink: "https://www.wcofun.tv/anime/the-legend-of-korra",
+    imagePath: "https://m.media-amazon.com/images/M/MV5BMTM1MTI5ODU4MV5BMl5BanBnXkFtZTcwNTYyNTU4Mg@@._V1_.jpg",
+    movieName: "A Christmas Carol",
+    genre:"movie"
+    },
+    {
+    movieLink: "https://www.wcofun.tv/anime/the-legend-of-korra",
+    imagePath: "https://images.ottplay.com/posters/8cdd59ba436c0238dd52a9ee1c5d35a9.jpg",
+    movieName: "Dude Season 1",
+    genre:"serial"
+    },
+    {
+    movieLink: "https://www.wcofun.tv/anime/the-legend-of-korra",
+    imagePath: "https://m.media-amazon.com/images/M/MV5BMGM0NmQ0ZTMtOTY1Ni00OGI2LWJmYzctOGJlNmUxMjNhZTBkXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_.jpg",
+    movieName: "Dude Season 2",
+    genre:"serial"
+    },
+    {
+    movieLink: "https://www.wcofun.tv/anime/the-legend-of-korra",
+    imagePath: "https://m.media-amazon.com/images/M/MV5BNmZmNTA5ZTgtNTgzOS00YWQ5LTgxZTItYTc1NzNjOWNmMDA5XkEyXkFqcGdeQXVyMTExMTIzMTA5._V1_.jpg",
+    movieName: "Sapne vs Everyone",
+    genre:"serial"
+    }
 
 ]
 

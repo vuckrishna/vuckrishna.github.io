@@ -1,4 +1,22 @@
 // dark mode code 
+
+// const toggleButton = document.getElementById('toggle-button');
+// const body = document.body;
+
+// // Check for saved 'darkMode' in localStorage
+// const darkMode = localStorage.getItem('darkMode');
+
+// if (darkMode) {
+//     body.classList.add('dark-mode');
+// }
+
+// toggleButton.onclick = function() {
+//     body.classList.toggle('dark-mode');
+
+//     // Save the current preference to localStorage
+//     localStorage.setItem('darkMode', body.classList.contains('dark-mode'));
+// }
+
 function darkMode(){
     let color1 = document.getElementById("darkMode").innerText;
     if ( color1 == "Light"){
