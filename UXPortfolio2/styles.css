@@ -1,0 +1,188 @@
+/* colors : lightcoral, lightsalmon, white, black, rgb(255, 191, 165), rgb(255, 183, 155), light pink */
+/* Basic layout */
+
+/* .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  } */
+  /* "Poppins", sans-serif; */
+
+body{
+    background: black !important;
+    color: black;
+    font-family: "Roboto", sans-serif !important;
+}
+
+.section1{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+.div1, .div2, .div3, .div4, .div5{
+    width: 280px;
+    height: 730px;
+    background: lightgray;
+    margin: 5px 5px 5px 5px;
+    transition: width 0.5s, height 0.5s;
+    border-radius: 10px;
+    opacity: 0.6;
+}
+
+.div2, .div4{
+    background-color: lightblue;
+}
+
+
+.div1:hover, .div2:hover, .div3:hover, .div4:hover, .div5:hover {
+    background: lightgray;
+    width: 300px;
+    height: 750px;
+    opacity: 1;
+}
+
+.div2:hover, .div4:hover, .div6:hover {
+    background-color: lightblue;
+    opacity: 1;
+}
+
+/* Add on layout customization */
+
+.div1, .div2, .div3, .div4, .div5{
+    text-align: center;
+}
+
+.div1 h1, .div2 h1, .div3 h1, .div4 h1, .div5 h1{
+    padding: 10px;
+    font-size: 22px;
+    margin: 25px 0px 0px 0px;
+    /* font-weight: bold; */
+}
+
+.div1 h3{
+    margin: 5px;
+    /* font-weight: 500; */
+}
+
+.div1 p, .div2 p, .div3 p{
+    font-weight: 500;
+    margin: 5px;
+    font-size: medium;
+}
+.div1pic1 {
+    width: auto !important;
+    height: 230px !important;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.div1 img{
+    /* width: 25px; */
+    height: 25px;
+    /* margin-top: 10px; */
+    /* margin-left: 0px; */
+}
+figure{
+    margin: 0px;
+    margin: 20px 10px;
+}
+
+figcaption{
+    font-size: 15px;
+    /* font-weight: 400; */
+}
+
+/* figure img {
+    width: 10px;
+    height: 10px;
+} */
+.sec1sub1 {
+    /* display: ; */
+    /* justify-content: center; */
+}
+.sec1sub2 {
+    margin-top: 20px;
+}
+.sec1sub3 {
+    display: flex;
+    padding: 0px;
+    justify-content: center;
+    gap: 10px;
+}
+
+.div2 h3, h4 {
+    margin: 5px;
+}
+
+.div2 h3{
+    margin-top: 10px;
+    /* font-weight: 500; */
+}
+
+.div2 figure {
+    margin: 20px 10px 50px 10px;
+}
+
+.div2 figure img{
+    width: auto;
+    height: 50px;
+    /* margin-top: 10px; */
+}
+
+.div2pic1 {
+    /* margin-top: 10px; */
+    width: auto !important;
+    height: 200px !important;
+    border-radius: 20px;
+}
+
+.div3 div{
+    margin-top: 30px;
+}
+
+.div3 button{
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid black;
+    margin: 5px;
+    background-color: lightblue;
+    color: black;
+    font-weight: bold;
+    font-size: medium;
+}
+.div3 figure img{
+    width: auto;
+    height: 50px;
+}
+
+
+
+.sec4sub1 {
+    /* text-align: center; */
+    margin-bottom: 10px;
+    text-wrap: balance;
+}
+.sec4sub1 img{
+    /* width: 150px; */
+    margin-top: 20px;
+    height: 50px;
+    /* margin-bottom: 10px; */
+    /* border-radius: 5px; */
+}
+.sec4sub1 h3, p{
+    margin: 0px;
+    padding: 0px;
+}
+.div5 h1{
+    margin-bottom: 20px;
+}
+.sec5sub1 button{
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid black;
+    margin: 5px;
+    background-color: lightblue;
+    /* color: lightcyan; */
+    font-weight: bold;
+    font-size: medium;
+}
