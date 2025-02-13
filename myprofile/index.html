@@ -1,340 +1,370 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <nav id="desktop-nav">
-        <div class="logo">V U C Krishna</div>
-        <div>
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+      <div class="logo">V U C Krishna</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          src="./assets/my singtel pic final edit.jpg"
+          alt="John Doe profile picture"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Viswanadham Udaya Chitanya Krishna</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/my resume 2024 may v2.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
         </div>
-      </nav>
-      <section id="profile">
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/vuc-krishna/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/vuckrishna/vuckrishna.github.io'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
         <div class="section__pic-container">
-          <img src="./assets/my singtel pic final edit.jpg" alt="John Doe profile picture" />
+          <img
+            src="./assets/pic6.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
         </div>
-        <div class="section__text">
-          <p class="section__text__p1">Hello, I'm</p>
-          <h1 class="title">Viswanadham Udaya Chitanya Krishna</h1>
-          <p class="section__text__p2">Frontend Developer</p>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2"
-              onclick="window.open('./assets/my resume 2024 may v2.pdf')"
-            >
-              Download CV
-            </button>
-            <button class="btn btn-color-1" onclick="location.href='./#contact'">
-              Contact Info
-            </button>
-          </div>
-          <div id="socials-container">
-            <img
-              src="./assets/linkedin.png"
-              alt="My LinkedIn profile"
-              class="icon"
-              onclick="location.href='https://www.linkedin.com/in/vuc-krishna/'"
-            />
-            <img
-              src="./assets/github.png"
-              alt="My Github profile"
-              class="icon"
-              onclick="location.href='https://github.com/vuckrishna/vuckrishna.github.io'"
-            />
-          </div>
-        </div>
-      </section>
-      <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-          <div class="section__pic-container">
-            <img
-              src="./assets/pic6.jpg"
-              alt="Profile picture"
-              class="about-pic"
-            />
-          </div>
-          <div class="about-details-container">
-            <div class="about-containers">
-              <div class="details-container">
-                <img
-                  src="./assets/experience.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <h3>Experience</h3><br/>
-                <p>Singapore Telcommunications LTD (Singtel) <br/>  
-                <br/> Internship - 0.5 year <br />Mobile Support Engineer / Chatbot Tester Trainee</p>
-                <!-- <h3>SINGTEL SINGAPORE</h3> -->
-              </div>
-              <div class="details-container">
-                <img
-                  src="./assets/education.png"
-                  alt="Education icon"
-                  class="icon"
-                />
-                <h3>Education</h3><br />
-                <p>Bachelors in Information Technology
-                  <br /> University of Wollongong (SIMGE) Singapore<br/>
-                  <br /> Diploma in Information Technology 
-                  <br/> Temasek Polytechnic Singapore</p>
-              </div>
-            </div>
-            <div class="text-container">
-              <h3>Certifications:</h3>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <br />
               <p>
-                • React Basics by Meta: Coursera course Certificate.<br/>
-                • Programming with JavaScript by Meta: Coursera course Certificate.<br/>
-                • Introduction to Front-End Development by Meta: Coursera course Certificate.<br/>
-                • Certificate of Performance: Coding for ALL (Python) Awarded by Temasek Polytechnic.
+                Singapore Telcommunications LTD (Singtel) <br />
+                <br />
+                Internship - 0.5 year <br />Mobile Support Engineer / Chatbot
+                Tester Trainee
+              </p>
+              <!-- <h3>SINGTEL SINGAPORE</h3> -->
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <br />
+              <p>
+                Bachelors in Information Technology <br />
+                University of Wollongong (SIMGE) Singapore<br />
+                <br />
+                Diploma in Information Technology <br />
+                Temasek Polytechnic Singapore
               </p>
             </div>
           </div>
+          <div class="text-container">
+            <h3>Certifications:</h3>
+            <p>
+              • React Basics by Meta: Coursera course Certificate.<br />
+              • Programming with JavaScript by Meta: Coursera course
+              Certificate.<br />
+              • Introduction to Front-End Development by Meta: Coursera course
+              Certificate.<br />
+              • Certificate of Performance: Coding for ALL (Python) Awarded by
+              Temasek Polytechnic.
+            </p>
+          </div>
         </div>
-        <img
-          src="./assets/arrow.png"
-          alt="Arrow icon"
-          class="icon arrow"
-          onclick="location.href='#experience'"
-        />
-      </section>
-      <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Skills</h1>
-        <div class="experience-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <h2 class="experience-sub-title">Frontend Development</h2>
-              <div class="article-container">
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>HTML</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>CSS</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Bootstrap</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                   
-                    <h3>Javascript</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>React.js Lib</h3>
-                    <p>Basic</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Java Core</h3>
-                    <p>Basic</p>
-                  </div>
-                </article>
-              </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Bootstrap</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Javascript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React.js Lib</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java Core</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
             </div>
-            <div class="details-container">
-              <h2 class="experience-sub-title">Development Tools</h2>
-              <div class="article-container">
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>MYSQL Workbench</h3>
-                    <p>Basic</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Node JS</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Express JS</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Git</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>VS Code</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-              </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Development Tools</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MYSQL Workbench</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>VS Code</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
             </div>
           </div>
         </div>
-        <img
-          src="./assets/arrow.png"
-          alt="Arrow icon"
-          class="icon arrow"
-          onclick="location.href='#projects'"
-        />
-      </section>
-      <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-          <div class="about-containers">
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="./assets/img7.jpg"
-                  alt="Project 1"
-                  class="project-img"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">My New Portfolio</h2>
-              <p>Creating a better portfolio, A more creative choices made with different design and theme. </p><br/>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/vuckrishna/vuckrishna.github.io/tree/main/UXPortfolio'"
-                > 
-                  Github
-                </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://vuckrishna.github.io/UXPortfolio/'"
-                >
-                  Live Demo
-                </button>
-              </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/img1.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
             </div>
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="./assets/img1.jpg"
-                  alt="Project 1"
-                  class="project-img"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">Pixel Experience</h2>
-              <p>This Website loads multiple products information in the same section without reloading the whole website.</p><br/>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/vuckrishna/vuckrishna.github.io/tree/main/PixelExp'"
-                >
-                  Github
-                </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://vuckrishna.github.io/PixelExp/'"
-                >
-                  Live Demo
-                </button>
-              </div>
+            <h2 class="experience-sub-title project-title">
+              React Responsive UI
+            </h2>
+            <p>
+              Designed a Social Media app with side navigation, users feed,
+              friends list and Darkmode using ReactJS and Tailwind.
+            </p>
+            <br />
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/vuckrishna/vuckrishna.github.io/tree/main/ReactSocialMediaApp'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://vuckrishna.github.io/react-socialmedia-ui/'"
+              >
+                Live Demo
+              </button>
             </div>
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="./assets/img5.jpg"
-                  alt="Project 2"
-                  class="project-img"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">Breakfast Website</h2>
-              <p>Inspired by Burgerking - Homepage, Menu with different catergory food display, contact and about pages.</p><br/>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/vuckrishna/vuckrishna.github.io/tree/main/Breakfastapp'"
-                >
-                  Github
-                </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://vuckrishna.github.io/Breakfastapp/'"
-                >
-                  Live Demo
-                </button>
-              </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/img7.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
             </div>
-            <!-- <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">My New Portfolio</h2>
+            <p>
+              Creating a better portfolio, A more creative choices made with
+              different design and theme.
+            </p>
+            <br />
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/vuckrishna/vuckrishna.github.io/tree/main/UXPortfolio'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://vuckrishna.github.io/UXPortfolio/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/img5.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Breakfast Website
+            </h2>
+            <p>
+              Inspired by Burgerking - Homepage, Menu with different catergory
+              food display, contact and about pages.
+            </p>
+            <br />
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/vuckrishna/vuckrishna.github.io/tree/main/Breakfastapp'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://vuckrishna.github.io/Breakfastapp/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <!-- <div class="details-container color-container">
               <div class="article-container">
                 <img
                   src="./assets/img6.jpg"
@@ -359,55 +389,53 @@
                 </button>
               </div>
             </div> -->
-            
-          </div>
-          
         </div>
-        
-        <img
-          src="./assets/arrow.png"
-          alt="Arrow icon"
-          class="icon arrow"
-          onclick="location.href='#contact'"
-        />
-      </section>
-      <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-          <div class="contact-info-container">
-            <img
-              src="./assets/email.png"
-              alt="Email icon"
-              class="icon contact-icon email-icon"
-            />
-            <p><a href="mailto:examplemail@gmail.com">udaycv333@gmail.com</a></p>
-          </div>
-          
-          <div class="contact-info-container">
-            <img
-              src="./assets/linkedin.png"
-              alt="LinkedIn icon"
-              class="icon contact-icon"
-            />
-            <p><a href="https://www.linkedin.com/in/vuc-krishna/">LinkedIn</a></p>
-          </div>
+      </div>
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">udaycv333@gmail.com</a></p>
         </div>
-      </section>
-      <footer>
-        <nav>
-          <div class="nav-links-container">
-            <ul class="nav-links">
-              <li><a href="#about">About</a></li>
-              <li><a href="#experience">Experience</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li><a href="#desktop-nav">Top</a></li>
-            </ul>
-          </div>
-        </nav>
-        <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
-      </footer>
+
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/vuc-krishna/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#desktop-nav">Top</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+    </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
