@@ -439,6 +439,7 @@ section {
   .project-title {
     margin: 1rem;
     color: black;
+    font-size: 1.5rem !important;
   }
   
   .project-btn {
