@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    /* padding: 0; */
+}
+.navbar{
+    /* background-color: red;  */
+    /* color:brown; */
+    /* display: block; */
+}
+.navbar ul{
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    height: 20px;
+    padding: 15px;
+}
+
+.navbar li a {
+    color: white;
+    text-align: center;
+    padding: 0px 10px;
+    text-decoration: none;
+    font-size: large;
+  }
+
+#itemLists ul{
+    display: flex;
+    list-style-type: none;
+    
+
+}
+
+.cards{
+    display: flex !important;
+    /* align-items: center; */
+}
+
+.card {
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    width: 220px;
+    height: 330px;
+    margin: 20px 10px;
+    border: 3px solid black ;
+    border-radius: 10px;
+}
+.card img {
+    height: 200px;
+    width: 100px;
+}
+
+.formdetails {
+    display: flex;
+}
+.formdetails div{
+    font-weight: 600;
+    width: 200px;
+    padding: 10px;
+    margin: 0px 10px;
+}
+.formdetails input{
+    height: 30px;
+    font-size: large;
+    border-radius: 5px;
+}
+
+.buttons {
+    display: flex;
+    padding: 10px;
+}
+
+.buttons button{
+    margin: 0px 10px;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+

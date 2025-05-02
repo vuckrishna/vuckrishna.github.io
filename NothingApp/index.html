@@ -1,0 +1,237 @@
+<!DOCTYPE html lang="en">
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Nothing Products</title>
+    <!-- <link rel="stylesheet" src="styles.css" /> -->
+    <link rel="stylesheet" href="/assets/style.css" />
+    <!-- <style>
+      .navbar{background-color: red;}
+    </style> -->
+  </head>
+
+  <body onload="showSQL()">
+    <div class="navbar">
+      <ul>
+        <li><a href="">Nothing</a></li>
+        <li><a href="">Products</a></li>
+      </ul>
+    </div>
+    <!-- <div class="cards">
+      <div class="card">
+        <img
+          src="https://in.nothing.tech/cdn/shop/files/phone-2-black_2d5e1e18-c3ed-41cd-9779-921276ce0502_750x.png?v=1688994746"
+          alt=""
+        />
+        <h2>Nothing Phone 2</h2>
+        <p>Snapdragon 8+ Gen 1</p>
+        <p>Price: 800</p>
+      </div>
+      <div class="card">
+        <img
+          src="https://in.nothing.tech/cdn/shop/files/phone-2-black_2d5e1e18-c3ed-41cd-9779-921276ce0502_750x.png?v=1688994746"
+          alt=""
+        />
+        <h2>Nothing Phone 2</h2>
+        <p>Snapdragon 8+ Gen 1</p>
+        <p>Price: 800</p>
+      </div>
+    </div> -->
+
+    <!-- Data Found: -->
+    <!-- <p id="itemLists"></p> -->
+    <div class="cards" id="cards"></div>
+    <br />
+    <div class="formdetails">
+      <!-- Title: -->
+      <div>
+        <label for="titleValue">Phone Name:</label>
+        <input type="text" name="titleValue" id="productid" value="" />
+      </div>
+      <div>
+        <label for="priceValue">Price:</label>
+        <input type="text" name="priceValue" id="productid" value="" />
+      </div>
+      <div>
+        <label for="detailsValue">Details:</label>
+        <input type="text" name="detailsValue" id="productid" value="" />
+      </div>
+      <div>
+        <label for="imageurlValue">ImageUrl:</label>
+        <input type="text" name="imageurlValue" id="productid" value="" />
+      </div>
+      <div>
+        <label for="searchid">Delete by Name: </label>
+        <input
+          type="text"
+          name="searchid"
+          id="productid"
+          value=""
+          style="background-color: darkred; color: white"
+        />
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-toggle="modal"
+        data-target=""
+        onclick="addProduct()"
+      >
+        Add
+      </button>
+      <!-- <br /><br /> -->
+
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-toggle="modal"
+        data-target=""
+        onclick="updateProduct()"
+      >
+        Update
+      </button>
+
+      <button
+        style="background-color: darkred; color: white"
+        type="button"
+        class="btn btn-primary"
+        data-toggle="modal"
+        data-target=""
+        onclick="deleteProduct()"
+      >
+        Delete
+      </button>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+      integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+      integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+
+  <script>
+    var data_array;
+
+    // function getData() {
+    var request = new XMLHttpRequest();
+    request.open("GET", "/products", true);
+
+    request.onload = function () {
+      data_array = JSON.parse(request.responseText); // converts JSON data to JavaScript object
+    };
+
+    request.send();
+    // }
+
+    function showSQL() {
+      var items1 = document.getElementById("cards");
+
+      // var info = "<ul>";
+
+      for (var j = 0; j < data_array.length; j++) {
+        // info = info + "<li>";
+        // info =
+        //   info +
+        items1.innerHTML += `
+            <div class="card">
+              <img src="${data_array[j].imageurl}" alt="" height="100" width="50">
+              <h3>${data_array[j].title}</h3>
+              <p>${data_array[j].details}</p>
+              <p>Price: ${data_array[j].price}</p>
+            </div>
+          `;
+        // data_array[j].title +
+        // " " +
+        // data_array[j].price +
+        // data_array[j].details +
+        // `<img src="${data_array[j].imageurl}" alt="" height="300" width="150">`;
+        // info = info + "</li>";
+      }
+      // info = info + "</ul>";
+
+      // items1.innerHTML = info;
+    }
+
+    function addProduct() {
+      // to retrieve the value in an input field
+      var title = document.querySelector("input[name='titleValue']").value;
+      var price = document.querySelector("input[name='priceValue']").value;
+      var details = document.querySelector("input[name='detailsValue']").value;
+      var imageurl = document.querySelector(
+        "input[name='imageurlValue']"
+      ).value;
+
+      // convert to JSON format the form data
+      var form_array = {
+        title: title,
+        price: price,
+        details: details,
+        imageurl: imageurl,
+      };
+
+      var request = new XMLHttpRequest();
+      request.open("POST", "/products/add", true);
+      request.setRequestHeader("Content-Type", "application/json");
+      request.onload = function () {
+        data_array = request.responseText; // No need to convert to JSON here because it is only success/no msg response
+      };
+
+      request.send(JSON.stringify(form_array));
+      location.reload();
+    }
+
+    // get one ROW by id (hard-coded id for now)
+    function deleteProduct() {
+      var request = new XMLHttpRequest();
+
+      // to retrieve the value in an input field
+      var searchValue = document.querySelector("input[name='searchid']").value;
+
+      request.open("DELETE", "/product/delete/" + searchValue, true);
+
+      request.onload = function () {
+        data_array = JSON.parse(request.responseText); // converts JSON data to JavaScript object
+      };
+
+      request.send();
+      location.reload();
+    }
+
+    function updateProduct() {
+      /// to retrieve the value in an input field
+      var title = document.querySelector("input[name='titleValue']").value;
+      var price = document.querySelector("input[name='priceValue']").value;
+      var details = document.querySelector("input[name='detailsValue']").value;
+      var imageurl = document.querySelector(
+        "input[name='imageurlValue']"
+      ).value;
+
+      // convert to JSON format the form data
+      var form_array = {
+        title: title,
+        price: price,
+        details: details,
+        imageurl: imageurl,
+      };
+
+      var request = new XMLHttpRequest();
+      request.open("PUT", "/product/updateproduct", true);
+      request.setRequestHeader("Content-Type", "application/json");
+      request.onload = function () {
+        data_array = request.responseText; // No need to convert to JSON here because it is only success/no msg response
+      };
+
+      request.send(JSON.stringify(form_array));
+      location.reload();
+    }
+  </script>
+</html>
