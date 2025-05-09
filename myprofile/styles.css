@@ -268,7 +268,7 @@ section {
   
   /* ICONS */
   
-  .icon {
+  .icon, .iconArrow {
     cursor: pointer;
     height: 2rem;
   }
