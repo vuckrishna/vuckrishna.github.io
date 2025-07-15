@@ -34,52 +34,91 @@ a,
     text-align: center;
   }
   #desktop-nav .logo{
-    font-size: 40px;
+    font-size: 45px;
     padding: 0px 150px;
     padding-bottom: 10px;
   }
   #desktop-nav a{
-    font-size: 32px;
+    font-size: 36px;
     padding: 0px 15px;
+    margin: 0px 10px;
   }
   #profile{
     /* margin: auto; */
     width: max-content;
     /* align-items: center; */
-    margin: 0px 200px;
+    margin: 0px 100px;
 
   }
+  #profile .section__pic-container {
+    display: flex;
+    height: 500px;
+    width: 400px;
+    margin: auto 0;
+    margin-left: 80px;
+  }
+  #profile .section__text{
+        margin-left: 60px;
+
+  }
+    #profile p{
+        font-size: 38px;
+  }
+      #profile button{
+        width: 250px;
+        height: auto;
+        font-size: 25px;
+        padding: 15px 20px;
+  }
+  #profile #socials-container img{
+    height: 60px;
+    /* margin-top: 2; */
+  }
+
   #profile .title{
-    font-size: 2rem;
+    font-size: 40px;
   }
   #about .section__text__p1{
-    padding-left: 200px;
+    padding-left: 100px;
+    font-size: 30px;
 
   }
   #about .title{
     margin-bottom: 50px;
-    padding-left: 200px;
+    padding-left: 100px;
+    font-size: 50px;
     /* float: left; */
   }
   #about {
     width: max-content;
-    margin: 0 11rem;
+    /* margin: 0px 200px; */
     height: auto;
     margin-bottom: 150px;
+    /* padding: 20px; */
 
     /* float: left; */
   }
   #about-containers{
     margin: 30px 0px;
     display: inline;
+    /* gap: 20rem !important; */
+    /* justify-content: space-evenly; */
     /* margin: 20px; */
   }
+  #about .details-container {
+    width: 65%;
+  }
+  .section-container{
+    gap: 18rem !important;
+  }
   #about-containers p{
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
   }
   .details-container{
     width: 70%;
     margin-bottom: 30px;
+    /* margin-left: 150px; */
+    font-size: 30px;
 
     /* margin: 20px; */
   }
@@ -88,15 +127,27 @@ a,
    }
    #about .section__pic-container{
     margin: 0px;
-    /* margin-left: 20px; */
-    /* height: 500px; */
-    /* width: 400px; */
+    /* margin-right: 100px; */
+    height: 500px;
+    width: 300px;
+   }
+   #about{
+    /* margin: 0px 100px; */
+   }
+   .section-container{
+    gap: 0;
+    /* justify-content: space-evenly !important; */
+
+   }
+   .about-details-container{
+    /* padding-left: 100px !important; */
    }
    #about .text-container{
     margin: 0px;
-    padding: 0px 20px;
-    width: 70%;
-    font-size: 22px;
+    /* padding: 0px 20px; */
+    /* padding-left: 100px; */
+    width: 60%;
+    font-size: 28px;
    }
    #about img{
     margin: 0;
@@ -109,10 +160,26 @@ a,
     margin: 0 9rem;
     height: auto;
     margin-bottom: 150px;
+    margin-top: 0rem !important;
+   }
+  #experience .about-containers{
+    display: inline;
+    text-align: center;
+    justify-content: center;
+  }
+
+   #experience .details-container{
+    width: 1400px;
+    font-size: xx-large !important;
 
    }
-   #experience .details-container{
-    width: 600px;
+   #experience  p{
+    font-size: xx-large !important;
+   }
+   #experience article {
+    width: 21rem;
+    justify-content:left;
+    gap: 1rem;
    }
 
    #projects {
@@ -121,9 +188,19 @@ a,
     height: auto;
     /* margin-bottom: 150px; */
    }
+   #projects h2{
+    font-size: xx-large !important;
+   }
+   #projects p{
+    font-size: x-large !important;
+   }
+   #projects button{
+    font-size: x-large;
+    width: 12rem;
+   }
 
    #projects .details-container{
-    width: 370px;
+    width: 400px;
     margin: 0px;
    }
    #contact{
@@ -147,6 +224,8 @@ a,
 
 
 }
+
+/* media styles end */
 
 
 
@@ -330,7 +409,8 @@ section {
   .about-containers {
     gap: 2rem;
     margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin-top: 15rem;
+    font-size: large;
   }
   
   .about-details-container {
@@ -379,12 +459,19 @@ section {
   }
   .text-container{
     margin-left: 1rem;
+    font-size: medium;
   }
   
   /* EXPERIENCE SECTION */
   
   #experience {
     position: relative;
+    margin-top: 15rem;
+    margin-bottom: 2rem;
+  }
+
+  #experience .about-containers{
+    margin-top: 2rem !important;
   }
   
   .experience-sub-title {
@@ -424,6 +511,10 @@ section {
   
   #projects {
     position: relative;
+  }
+
+    #projects .about-containers{
+    margin-top: 2rem !important;
   }
   
   .color-container {
