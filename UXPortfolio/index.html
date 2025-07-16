@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide"> -->
+        <link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'>
+    </head>
+    <body>
+        <div class="div1">
+            <ul>
+                <li><a href="#section1">Intro</a></li>
+                <li><a href="#aboutdiv1">About</a></li>
+                <li onclick="alertfun()"><a href="#">Exp</a></li>
+                <li onclick="alertfun()"><a href="#">Skills</a></li>
+                <li onclick="alertfun()"><a href="#">Projects</a></li>
+                <li onclick="alertfun()"><a href="#">CV</a></li>
+                <li onclick="alertfun()"><a href="#">Interests</a></li>
+                <li onclick="alertfun()"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="section1 " id="section1">
+            <div class="div2">
+                <h1>Portfolio Highlights</h1>
+                <div class="buttons">
+                    <button onclick="introblock1()" id="btn1">Myself</button>
+                    <button onclick="introblock2()" id="btn2">Education</button>
+                    <button onclick="introblock3()" id="btn3">Experience</button>
+                    <button onclick="introblock4()" id="btn4">Skills</button>
+                </div>
+                <div class="block1" id="block1">
+                    <h2>Let me Introduce myself</h2>
+                    <p>I'm Krishna</p>
+                    <p>Frontend Developer and UX designer</p>
+                    <div class="div2">
+                        <p>udaycv333@gmail.com</p>
+                        <p>+65 82928369</p>
+                    </div>
+                    <div class="div1">
+                        <figure><img
+                        src="./assets/linkedin.png"
+                        alt="My LinkedIn profile"
+                        class="icon"
+                        onclick="location.href='https://www.linkedin.com/in/vuc-krishna/'"
+                        /><figcaption>Linkedin</figcaption>
+                    </figure>
+                    <figure>
+                        <img
+                        src="./assets/github.png"
+                        alt="My Github profile"
+                        class="icon"
+                        onclick="location.href='https://github.com/vuckrishna/vuckrishna.github.io'"
+                        /><figcaption>Github</figcaption>
+                    </figure>
+                    <figure>
+                        <img
+                        src="./assets/checkmark.png"
+                        alt="My resume"
+                        class="icon"
+                        onclick="window.open('./assets/my resume 2024 may v2.pdf')"
+                        /><figcaption>Resume</figcaption>
+                    </figure>
+<!--                    
+                    <figure>
+                        <img
+                        src="./assets/education.png"
+                        alt="My resume"
+                        class="icon"
+                        onclick="window.open('./assets/my resume 2024 may v2.pdf')"
+                        /><figcaption>82928369</figcaption>
+                    </figure>
+                    <figure>
+                        <img
+                        src="./assets/email.png"
+                        alt="My resume"
+                        class="icon"
+                        onclick="location.href='mailto:someone@example.com'"
+                        /><figcaption>udaycv333@gmail.com</figcaption>
+                    </figure> -->
+                    </div>
+                   
+                 
+                    <!-- <div>
+                        <p class="contactinfo">Email: udaycv333@gmail.com  Mobile:82928369</p>
+                    </div> -->
+                </div>
+
+                <div class="block1" id="block2">
+                    <div class="b2div1">
+                        <div>
+                        <figure><img
+                            src="./assets/uow.png"
+                            alt="My LinkedIn profile"
+                            class="icon uni"
+                            onclick="location.href='https://www.sim.edu.sg/degrees-diplomas/sim-global-education/university-partners-sim-ge/university-of-wollongong'"
+                            />
+                            <!-- <figcaption>Oct 2020 - Oct 2022</figcaption> -->
+                        </figure>
+                        <!-- <button>Bachelors in <br> Information Technology</button> -->
+                        <p>Bachelor of <br> Information Technology</p>
+                        <!-- <p>University of Wollongong (SIMGE) Singapore</p> -->
+                        <p>Oct 2020 - Oct 2022</p>
+                        </div>
+                        <div>
+                        <figure><img
+                            src="./assets/tp.svg"
+                            alt="My LinkedIn profile"
+                            class="icon"
+                            onclick="location.href='https://www.tp.edu.sg/'"
+                            />
+                            <!-- <figcaption>Apr 2017 - Apr 2020</figcaption> -->
+                            <!-- <p>Diploma in <br> Information Technology</p> -->
+                        <!-- <p>Temasek Polytechnic Singapore</p> -->
+                        </figure>
+                        <p>Diploma in <br> Information Technology</p>
+                        <p>Apr 2017 - Apr 2020</p>
+                        <!-- <button>Diploma in <br> Information Technology</button> -->
+                        </div>
+                            
+                       
+                        <!-- 
+                        <p>University of Wollongong (SIMGE) Singapore</p>
+                         -->
+                    </div>
+                    <!-- <div class="b2div2"> -->
+                        <!-- <p>Diploma in Information Technology</p>
+                        <p>Temasek Polytechnic Singapore</p>
+                        <p>Apr 2017 - Apr 2020</p> -->
+                    <!-- </div> -->
+                    
+                </div>
+                <div class="block1" id="block3">
+                    <div class="b3container">
+                    <div class="b3div1">
+                        <figure><img
+                                src="https://images.cdn-files-a.com/uploads/7211388/400_63975009ccb35.jpg"
+                                alt="My LinkedIn profile"
+                                class="icon"
+                                onclick="location.href='https://www.linkedin.com/in/vuc-krishna/'"
+                                />
+                                <!-- <figcaption>Singapore</figcaption> -->
+                            </figure>
+                            
+                        <p>Associate Developer <br>- Web Technologies</p>
+                        <div>
+                            <button>Web Development</button>
+                            <!-- <button>Helpdesk</button> -->
+                            <button>HTML & CSS</button>
+                        </div>
+                        <div>
+                            <button>Designing Prototypes</button>
+                            <Button>Handling UI changes</Button>
+
+                        </div>
+                        <div>
+                            <button>Javascript</button>
+                            <button>Frontend Developer</button>
+                        </div>
+                         <!-- <div>
+                            <button>Frontend Developer</button>
+                        </div> -->
+                
+                            
+                    </div>
+
+                    <div class="b3div2">
+                        <figure><img
+                                src="./assets/singtel3.png"
+                                alt="My LinkedIn profile"
+                                class="icon"
+                                onclick="location.href='https://www.linkedin.com/in/vuc-krishna/'"
+                                />
+                                <!-- <figcaption>Singapore</figcaption> -->
+                            </figure>
+
+                        <p>Mobile support engineer <br>/ Chatbot tester</p>
+                        <div>
+                            <button>L1 support / Helpdesk</button>
+                            <!-- <button>Helpdesk</button> -->
+                            <button>Phone & Email support</button>
+                        </div>
+                        <div>
+                            <button>Chatbot Testing</button>
+                            <Button>User Acceptance testing</Button>
+
+                        </div>
+                        <div>
+                            <button>Singtel Web pages maintenance</button>
+                            <button>Documentation</button>
+                        </div>
+                        <!-- <div> -->
+                            <!-- <button>Singtel Web pages maintenance</button> -->
+                            <!-- <button>Documentation</button> -->
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+
+                <div class="block1" id="block4">
+                    <div class="b4div1">
+                        <div>
+                            <div class="b4heading">Technical Skills</div>
+                            <button>HTML</button>
+                            <button>CSS & Bootstrap</button>
+                            <button>Javascript</button>
+                            <button>React JS</button>
+                            <button>Java</button>
+                        </div>
+                        <div>
+                            <button>NodeJS</button>
+                            <button>MYSQL Workbench</button>
+                            <button>Express JS</button>
+                            <button>VS Code</button>
+                            <button>GIT</button>
+                        </div>
+                    </div>
+                    <div class="b4div2">
+                        <div>
+                            <div class="b4heading">Soft Skills & Hobbies</div>
+                            <button>Team Player</button>
+                            <button>Creative</button>
+                            <button>Organised</button>
+                            <button>Attentive</button>
+                        </div>
+                        <div>
+                             <button>Technology</button>
+                            <button>Mobiles & Gadgets</button>
+                            <button>Website Design</button>
+                            <button>Frontend Development</button>
+                        </div>
+                    </div>
+                    
+                    <!-- <div>
+                        <button>Singtel Web pages maintenance</button>
+                        <button>Documentation</button>
+                    </div> -->
+                    <!-- <h2>Let me Introduce block4</h2>
+                    <p>I'm Krishna</p>
+                    <p>Frontend Developer</p>
+                    <div class="div1">
+                        <figure><img
+                        src="./assets/linkedin.png"
+                        alt="My LinkedIn profile"
+                        class="icon"
+                        onclick="location.href='https://www.linkedin.com/in/vuc-krishna/'"
+                        /><figcaption>Linkedin</figcaption>
+                    </figure>
+                    <figure>
+                        <img
+                        src="./assets/github.png"
+                        alt="My Github profile"
+                        class="icon"
+                        onclick="location.href='https://github.com/vuckrishna/vuckrishna.github.io'"
+                        /><figcaption>Github</figcaption>
+                    </figure>
+                    <figure>
+                        <img
+                        src="./assets/checkmark.png"
+                        alt="My resume"
+                        class="icon"
+                        onclick="window.open('./assets/my resume 2024 may v2.pdf')"
+                        /><figcaption>Resume</figcaption>
+                    </figure> -->
+                    </div>
+                </div>
+
+
+            
+
+
+            
+
+        
+            <!-- div 2 closure -->
+        </div>
+
+        
+         <!-- section 1 div closure    -->
+        </div>
+
+        <div class="section2">
+            <div class="aboutdiv1" id="aboutdiv1">
+                <h2>About Me</h2>
+                    <p>A talented and passionate Software Developer with a solid understanding of HTML, CSS, JavaScript, and React JS 
+                    with experience in building many Single page applications and designing striking websites. Experience in IT support 
+                    role in Singapore's best Telecom operator Singtel, gave me a sight into Fast paced work environment and enhanced my 
+                    customer skills and Problem-solving skills. Striving to grow as a Web developer and design user interfaces that are 
+                    visually stunning as well as intuitive and user-friendly.</p>
+            </div>
+                
+            </div>
+        
+
+        <!-- <div class="section1"> -->
+            
+        <!-- </div> -->
+    
+        <!-- <div class="div2">
+            <h1>Let me introduce myself</h1>
+        </div>
+        <button>Play</button> -->
+    
+        <script src="script.js" async defer></script>
+    </body>
+</html>
